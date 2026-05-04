@@ -1,0 +1,23 @@
+# Forensic discovery worker: DB + ArcGIS mosaic + RoofDeepLens (YOLO optional).
+# Build: docker build -f Dockerfile.worker -t roof-hunter-worker .
+# Run:   docker run --rm -v "$(pwd)/leads_manifests:/app/leads_manifests" -v "$(pwd)/training_data:/app/training_data" \
+#          -e ROOF_YOLO_WEIGHTS=/weights/best.pt -v /path/to/best.pt:/weights/best.pt:ro roof-hunter-worker
+
+FROM python:3.12-slim-bookworm
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libglib2.0-0 libgomp1 \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY requirements.txt requirements-vision.txt ./
+RUN pip install --no-cache-dir -r requirements.txt \
+    && pip install --no-cache-dir -r requirements-vision.txt
+
+COPY src/ ./src/
+
+ENV PYTHONPATH=/app/src
+ENV PYTHONUNBUFFERED=1
+
+CMD ["python", "src/aws_discovery_worker.py"]

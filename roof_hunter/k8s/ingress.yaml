@@ -1,0 +1,78 @@
+# HTTP routing: API paths first (longest prefix), then SPA.
+# Install an ingress controller on AKS, then set spec.ingressClassName to match it.
+#
+# Common AKS options:
+# - NGINX Ingress: https://learn.microsoft.com/azure/aks/ingress-basic
+#   ingressClassName: nginx
+# - App routing add-on: https://learn.microsoft.com/azure/aks/web-app-routing
+#   ingressClassName: webapprouting.kubernetes.azure.com
+# - AGIC: ingressClassName: azure-application-gateway
+#
+# Replace CHANGEME.example.com with your DNS (Azure DNS / External-DNS).
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: roof-hunter
+  namespace: roof-hunter
+  annotations:
+    # nginx.ingress.kubernetes.io/proxy-body-size: "16m"
+    # cert-manager.io/cluster-issuer: "letsencrypt-prod"  # if using cert-manager
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: CHANGEME.example.com
+      http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: roof-hunter-dashboard-api
+                port:
+                  number: 8000
+          - path: /images
+            pathType: Prefix
+            backend:
+              service:
+                name: roof-hunter-dashboard-api
+                port:
+                  number: 8000
+          - path: /elevenlabs
+            pathType: Prefix
+            backend:
+              service:
+                name: roof-hunter-dashboard-api
+                port:
+                  number: 8000
+          - path: /save-lead
+            pathType: Prefix
+            backend:
+              service:
+                name: roof-hunter-dashboard-api
+                port:
+                  number: 8000
+          - path: /property-intel
+            pathType: Prefix
+            backend:
+              service:
+                name: roof-hunter-dashboard-api
+                port:
+                  number: 8000
+          - path: /schedule
+            pathType: Prefix
+            backend:
+              service:
+                name: roof-hunter-dashboard-api
+                port:
+                  number: 8000
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: roof-hunter-web
+                port:
+                  number: 80
+  # tls:
+  #   - hosts:
+  #       - CHANGEME.example.com
+  #     secretName: roof-hunter-tls

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Storm Intelligence Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-container": "#00f0ff",
+                        "on-surface": "#e0e3e5",
+                        "background": "#101415",
+                        "surface-dim": "#101415",
+                        "error": "#ffb4ab",
+                        "primary": "#dbfcff",
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(16, 20, 21, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 219, 233, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased">
+<header class="bg-slate-950/80 backdrop-blur-lg border-b border-cyan-500/20 flex justify-between items-center w-full px-6 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-sm">
+<span class="text-cyan-400 font-bold text-xl tracking-tighter">Roof Hunter Pro</span>
+</div>
+<nav class="hidden md:flex gap-md font-['Space_Grotesk'] tracking-tight text-sm uppercase font-bold text-slate-400">
+<a href="/">Dashboard</a>
+<a class="text-cyan-400" href="/storm-dashboard">Map Explorer</a>
+</nav>
+</header>
+<main class="flex-1 relative bg-surface-dim p-gutter">
+    <h1 class="text-3xl font-bold text-on-surface mb-8">Storm Intelligence Map</h1>
+    <div class="glass-panel p-8 rounded-xl text-center">
+        <p class="text-outline">Map layers are currently loading from the NOAA Level 2 Radar feed...</p>
+        <div class="mt-4 w-full h-1 bg-surface-variant overflow-hidden rounded-full">
+            <div class="w-1/2 h-full bg-primary-container animate-ping"></div>
+        </div>
+    </div>
+</main>
+</body></html>

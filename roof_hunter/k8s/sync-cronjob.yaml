@@ -1,0 +1,43 @@
+# Daily full ingest from S3 into authoritative_storms.db (POST /api/leads/sync-aws).
+# Requires API env AWS_LEADS_BUCKET (+ IAM or keys). Optional: roof-hunter-api-secrets SYNC_API_KEY.
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: roof-hunter-daily-s3-sync
+  namespace: roof-hunter
+  labels:
+    app.kubernetes.io/component: lead-sync
+spec:
+  schedule: "0 6 * * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 2
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: sync
+              image: curlimages/curl:8.5.0
+              command: ["/bin/sh", "-c"]
+              args:
+                - |
+                  set -e
+                  URL="${SYNC_URL:-http://roof-hunter-dashboard-api.roof-hunter.svc.cluster.local:8000/api/leads/sync-aws}"
+                  if [ -n "${SYNC_API_KEY:-}" ]; then
+                    curl -sfS -X POST "$URL" -H "Content-Type: application/json" -H "X-Roof-Hunter-Sync: ${SYNC_API_KEY}" -d "{}"
+                  else
+                    curl -sfS -X POST "$URL" -H "Content-Type: application/json" -d "{}"
+                  fi
+                  echo "S3 sync job finished OK"
+              env:
+                - name: SYNC_URL
+                  value: http://roof-hunter-dashboard-api.roof-hunter.svc.cluster.local:8000/api/leads/sync-aws
+                - name: SYNC_API_KEY
+                  valueFrom:
+                    secretKeyRef:
+                      name: roof-hunter-api-secrets
+                      key: SYNC_API_KEY
+                      optional: true

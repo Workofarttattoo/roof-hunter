@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>3D ROI Intelligence - Roof Hunter Pro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Leaflet Engine -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#00f0ff",
+                        "surface": "#101415",
+                        "background": "#101415",
+                        "error": "#ff3131"
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(16, 20, 21, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 240, 255, 0.5);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+        }
+        #map { 
+            position: absolute; 
+            top: 0; 
+            bottom: 0; 
+            width: 100%; 
+            background: #000;
+            filter: brightness(1.1) contrast(1.1);
+            transition: all 0.5s ease;
+            z-index: 1;
+        }
+        
+        .leaflet-container { background: #000 !important; }
+        
+        /* Neon Glows */
+        .neon-glow-cyan { filter: drop-shadow(0 0 10px #00f0ff); }
+        .neon-glow-red { filter: drop-shadow(0 0 15px #ff3131); }
+        
+        /* Custom Popup Styling */
+        .leaflet-popup-content-wrapper {
+            background: rgba(16, 20, 21, 0.95) !important;
+            border: 1px solid #00f0ff !important;
+            color: #fff !important;
+            border-radius: 12px !important;
+            padding: 0 !important;
+            overflow: hidden !important;
+            box-shadow: 0 0 30px rgba(0, 240, 255, 0.4) !important;
+        }
+        .leaflet-popup-content { margin: 0 !important; width: 320px !important; }
+        .leaflet-popup-tip { background: #00f0ff !important; }
+        
+        .hud-layer { z-index: 1000; position: relative; pointer-events: none; height: 100vh; display: flex; flex-direction: column; padding: 24px; }
+        .pointer-events-auto { pointer-events: auto; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-hidden h-screen">
+
+<div id="map"></div>
+
+<div class="hud-layer">
+    <!-- Top Bar -->
+    <div class="flex justify-between items-start pointer-events-none w-full">
+        <div class="glass-panel p-4 rounded-lg flex items-center gap-4 pointer-events-auto">
+            <span class="material-symbols-outlined text-primary text-3xl neon-glow-cyan">center_focus_strong</span>
+            <div>
+                <h1 class="text-xl font-black text-primary tracking-tighter uppercase">FORENSIC ROI COMMAND</h1>
+                <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Targeting Real-World Imagery</p>
+            </div>
+        </div>
+        
+        <div class="flex gap-4 pointer-events-auto">
+            <button onclick="toggleSatellite()" class="glass-panel px-6 py-3 rounded-lg flex items-center gap-3 hover:bg-primary/20 transition-all border-2 border-primary/50">
+                <span class="material-symbols-outlined text-primary" id="sat-icon">satellite_alt</span>
+                <span class="text-xs font-black uppercase tracking-widest" id="sat-text">Satellite Recon</span>
+            </button>
+            <div class="glass-panel px-6 py-3 rounded-lg flex items-center gap-3 border-2 border-error/50">
+                <span class="w-3 h-3 rounded-full bg-error animate-ping neon-glow-red"></span>
+                <span class="text-xs font-black uppercase tracking-widest text-error">STRIKE ACTIVE</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="mt-8 w-80 pointer-events-auto flex flex-col gap-4">
+        <div class="glass-panel p-6 rounded-xl space-y-4">
+            <h3 class="text-xs font-black text-primary uppercase tracking-widest border-b border-primary/30 pb-2">Qualified ROI Leads</h3>
+            <div class="space-y-3" id="leads-list">
+                <!-- Leads will be injected here -->
+                <p class="text-[10px] text-slate-500 italic">Syncing with forensic cache...</p>
+            </div>
+        </div>
+
+        <button onclick="triggerAlert()" class="w-full py-6 bg-error text-white font-black rounded-xl hover:shadow-[0_0_40px_rgba(255,49,49,0.8)] transition-all active:scale-95 text-lg tracking-tighter uppercase neon-glow-red border-2 border-error/50">
+            SIMULATE STRIKE
+        </button>
+    </div>
+
+    <!-- Bottom HUD -->
+    <div class="mt-auto flex justify-between items-end w-full">
+        <div class="glass-panel p-5 rounded-lg flex items-center gap-8 border-2 border-primary/30 pointer-events-auto">
+            <div class="flex flex-col">
+                <span class="text-[10px] text-slate-500 uppercase font-bold mb-2">Tactical Depth</span>
+                <input type="range" min="0" max="45" value="0" oninput="tiltMap(this.value)" class="w-32 h-2 bg-primary/20 rounded-lg appearance-none cursor-pointer accent-primary">
+            </div>
+            <div class="w-[1px] h-10 bg-white/20"></div>
+            <div class="flex items-center gap-4">
+                <span class="material-symbols-outlined text-primary text-4xl neon-glow-cyan">shutter_speed</span>
+                <div>
+                    <p class="text-[10px] text-slate-500 uppercase font-bold">Predictive Advantage</p>
+                    <p class="text-2xl font-black text-white">+4 HOURS</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="glass-panel p-5 rounded-lg text-right border-2 border-primary/30 pointer-events-auto">
+            <p class="text-[10px] text-slate-500 uppercase font-bold">System Status</p>
+            <p class="text-sm text-primary font-black uppercase">Real Imagery Synced</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const map = L.map('map', {
+        center: [35.3394, -97.4867], 
+        zoom: 13,
+        zoomControl: false,
+        attributionControl: false
+    });
+
+    const darkTiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 20 });
+    const satelliteTiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { maxZoom: 19 });
+
+    darkTiles.addTo(map);
+    let isSatellite = false;
+
+    function toggleSatellite() {
+        if (isSatellite) {
+            map.removeLayer(satelliteTiles);
+            darkTiles.addTo(map);
+            document.getElementById('sat-icon').innerText = 'satellite_alt';
+        } else {
+            map.removeLayer(darkTiles);
+            satelliteTiles.addTo(map);
+            document.getElementById('sat-icon').innerText = 'grid_view';
+        }
+        isSatellite = !isSatellite;
+    }
+
+    function tiltMap(val) {
+        document.getElementById('map').style.transform = `perspective(1000px) rotateX(${val}deg)`;
+    }
+
+    async function fetchLeads() {
+        const response = await fetch('/api/alerts');
+        const data = await response.json();
+        const list = document.getElementById('leads-list');
+        list.innerHTML = '';
+
+        data.forEach((lead, index) => {
+            // Mocking some spread for property markers
+            const lat = 35.3394 + (Math.random() - 0.5) * 0.05;
+            const lon = -97.4867 + (Math.random() - 0.5) * 0.05;
+
+            const marker = L.circleMarker([lat, lon], {
+                radius: 10,
+                fillColor: "#00f0ff",
+                color: "#fff",
+                weight: 2,
+                opacity: 1,
+                fillOpacity: 0.8
+            }).addTo(map);
+
+            const popupHtml = `
+                <div class="flex flex-col">
+                    <img src="/forensics/${lead.image}" class="w-full h-40 object-cover border-b border-primary/50">
+                    <div class="p-4 space-y-3">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <p class="text-xs font-black text-white uppercase">${lead.address}</p>
+                                <p class="text-[10px] text-slate-400">Owner: ${lead.contact}</p>
+                            </div>
+                            <span class="px-2 py-1 bg-primary/20 text-primary text-[10px] font-bold rounded">${lead.tag}</span>
+                        </div>
+                        <div class="p-3 bg-primary/10 border border-primary/30 rounded flex justify-between items-center">
+                            <div>
+                                <p class="text-[8px] text-primary uppercase font-bold">Est. Revenue</p>
+                                <p class="text-lg font-black text-primary">${lead.revenue}</p>
+                            </div>
+                            <button class="px-4 py-2 bg-primary text-slate-950 text-[10px] font-black rounded hover:shadow-[0_0_15px_rgba(0,240,255,0.5)] transition-all">BUY LEAD</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            marker.bindPopup(popupHtml);
+
+            // Add to sidebar
+            const leadEl = document.createElement('div');
+            leadEl.className = 'p-3 bg-primary/10 border border-primary/30 rounded flex justify-between items-center group cursor-pointer hover:bg-primary/20 transition-all';
+            leadEl.onclick = () => {
+                map.flyTo([lat, lon], 16);
+                marker.openPopup();
+            };
+            leadEl.innerHTML = `
+                <div>
+                    <p class="text-[10px] font-bold text-white uppercase">${lead.address}</p>
+                    <p class="text-[8px] text-primary uppercase font-bold">${lead.revenue}</p>
+                </div>
+                <span class="material-symbols-outlined text-primary text-sm">visibility</span>
+            `;
+            list.appendChild(leadEl);
+        });
+    }
+
+    fetchLeads();
+
+    async function triggerAlert() {
+        alert('STRIKE LOCK CONFIRMED. Syncing forensic snapshots...');
+        map.flyTo([35.3394, -97.4867], 14);
+        await fetch('/api/trigger_alert', { method: 'POST' });
+    }
+</script>
+
+</body></html>

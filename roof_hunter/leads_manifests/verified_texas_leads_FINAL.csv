@@ -1,0 +1,939 @@
+phone_number,first_name,last_name,property_address,city,state,zip_code,hail_date,hail_size,storm_type,damage_probability,structures_hit,image_findings,lead_priority
++18158603019,,,,TEXAS,,,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12978196183,,,,TEXAS,,,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19029480844,,,,TEXAS,,,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16572117489,,,,TEXAS,,,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15773656215,,,,TEXAS,,,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13079745240,,,,TEXAS,,,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18164333215,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18027502092,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16589626636,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13692029376,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16444331080,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18907930744,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16792609499,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16673433690,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16572528799,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18533462563,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13016228910,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14275981526,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12985199843,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18022069289,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13293846523,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16445139415,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13908374187,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15836759130,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18135668291,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12062461793,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14319415859,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15704675262,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15912547200,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18405326270,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17342820916,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15278388774,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18027472645,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18314758986,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13419263590,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14473959933,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15792281952,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18486157304,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13155882932,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14486872881,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12398222355,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18158731721,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18606138307,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13906973015,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17229500052,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15404341648,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14906892914,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16859416946,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17354335976,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12983069919,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19132931257,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15328661073,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17397024102,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13143850033,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16472029067,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13122841845,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17605303971,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16919666309,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12606362497,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18273634738,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15674022753,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16677957551,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13378565773,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14237850322,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15928018439,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16916322351,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14329158740,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14342004730,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18658041570,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17612326889,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15449951404,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16112973577,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12625841252,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16484770742,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15782005123,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19394154771,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14048015655,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14344248171,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19725025762,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16402235371,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13483144756,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12386432534,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13986048529,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19079782410,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15066657297,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14424684582,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14642168323,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16648306410,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15584589406,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19543028937,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18682207363,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17662176953,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18508112463,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13236666396,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16409047252,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12045808229,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13355225751,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16903389971,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14265353489,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12465616617,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13015010686,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13703140778,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16285406475,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19687934367,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17544884645,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14627354277,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19569911448,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13029773183,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17568297675,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19008727674,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12988341934,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18357387611,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17448939775,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18256109827,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13626748006,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13824216248,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18184978612,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16252708375,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16998413652,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16636267116,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16726230683,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16709921076,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13252512763,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12809729337,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17649149734,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17686733568,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18567435635,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16722656175,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16608879798,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18239923632,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15269973639,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18728198686,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13206943401,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15899302643,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15299796871,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14614428224,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17377780870,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17506937745,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19536024238,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17907826533,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13845555738,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14417676850,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18264820677,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16422448351,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18607631776,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12335795856,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18554837838,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12084636826,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12189325675,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13366833734,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18845616267,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17823208953,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12538431093,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14733673215,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14784111777,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15164447660,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17047349399,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17575476129,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17044567323,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12038981211,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17633956559,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12039918179,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19377484210,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18114616293,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12522238977,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19802026327,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12828328809,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13974458695,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15602669831,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13855566742,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13185146600,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15123118891,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15757222327,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15312723495,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15847540481,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14478635639,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13313807018,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18836933653,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17043279560,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14303623082,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14252208449,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16898247206,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13622803683,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15623766811,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12405910773,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17752777380,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14266690604,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18476600516,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19799911903,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12145369217,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15604727209,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14562311957,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17254324064,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14372048561,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14702387855,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17369123076,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17088306828,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15254907084,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15334544698,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19905494074,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13343334500,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18834016039,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15425896697,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14193843433,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16003051569,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15433278236,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15982908814,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16864874917,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18232918041,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18437607991,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19432834685,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12584449922,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16259771784,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14085909011,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17946761942,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19412231582,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16309932870,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14029132253,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16799598240,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14308137051,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18923792824,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13469704330,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15132414223,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14694457586,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12926780697,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15032939804,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16396324948,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14936408490,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19897607787,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19837220731,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15369584844,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16294635999,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16826301243,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19688689558,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17555843659,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19249117265,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12282066910,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15124466243,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15106097358,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12304545188,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16282186336,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13987398421,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12615203151,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17358691876,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17008993078,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18497473601,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16115436787,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12882692707,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15327639209,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17842133354,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18818260189,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15556966429,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17982412020,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16637732010,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12136566719,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15076332019,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15912280489,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14699679443,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13786828861,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18115173335,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12972152070,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12645996020,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14006559361,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16424322553,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18936488592,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13069194502,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15416459870,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19764406979,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13288673731,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13459937731,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12779480322,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16707370362,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17963258112,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12542718349,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15274772230,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14633401821,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12313567207,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14258836787,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18069203522,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16394554353,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15507369292,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19532973542,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13688446420,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18062038019,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14047616490,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15782108203,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15396200655,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16076239143,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14156718697,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14358980343,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15904714985,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13125822983,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18209307808,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18635084704,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15749472500,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19327330006,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17272234725,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15953306902,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12589807601,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15959761933,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14023932041,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12625548535,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17309989002,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12705244440,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18459450652,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16042875049,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16334213139,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12662594015,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15787593886,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15913921442,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17817292447,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15022914217,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17643695313,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12617551689,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15926452880,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16168151978,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18126143159,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17704866613,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19542483899,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12778744602,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14538622637,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16205733190,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18216218689,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15958015496,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12633446433,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18976146267,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17524572382,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17995899798,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19316615370,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13696291036,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18062040734,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16177334259,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16186427420,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12708670634,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12075332644,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12979892864,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14296435223,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15079872624,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19298804841,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15372016658,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15063260988,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19983356257,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14528511939,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13993762203,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18379643938,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12542608914,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17856749128,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16514207333,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15929681809,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12266812334,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13448719289,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18269102109,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13638419426,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13779712570,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16366246303,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18995773357,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14345506833,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14354462416,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15226279298,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15493219912,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17455749835,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13418883410,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15106705182,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14125442425,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12176752639,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12567818388,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12773607242,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14415398126,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14625532467,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15219828468,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17528862702,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14514995264,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12308764339,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15683916895,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18686377139,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13379655429,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13666769291,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12549562960,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14432300325,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18399220774,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14153464404,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15724969527,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16806534376,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14345768155,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18498084291,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15582604930,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14532278754,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12009915724,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13652815327,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19009540707,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13349359691,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14529666903,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18847034977,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17443619643,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16694277983,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12308831220,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19308487878,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19646789756,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19093333850,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18406850413,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12524453456,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19069888751,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16422368644,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18186928486,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15742131841,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17268578854,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18237818064,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17366496516,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19804322428,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17172474870,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12162409516,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15066678234,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12208294076,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17755012479,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19107700407,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16722658036,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15846751997,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13524806755,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18764113741,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17238940000,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12512306032,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13705607284,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14684670853,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14402709062,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13012138378,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17923646882,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19282129067,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12253017315,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17547943007,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13299005255,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17837594816,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16123202707,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14436311020,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14438844388,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17784615510,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14148505660,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19117032772,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15896813899,,,,Sherman,,75090,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17525177596,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15735644102,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15235633624,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13184764335,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19114997560,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18946973937,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16129307432,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16774575991,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16662223950,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18988200331,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19194495620,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19875119507,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18228864196,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18292906827,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18707838927,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17234950813,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13342458763,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12984484028,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17998254987,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13285655380,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15664517572,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15253937560,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14968490384,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13837285973,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19194384517,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13403144430,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18245432244,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12303353011,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12422573341,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17154023004,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18247530995,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15196598093,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13909671178,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17772686872,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17952737829,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17308871361,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16483387658,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18043403189,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18262149690,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19534317148,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17553853218,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18007373412,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14662467549,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18613847426,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18052227690,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16543000357,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12579117972,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13022497229,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16812468168,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17178916619,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15473616493,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12524733332,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13328629080,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19016804056,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16957768021,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16874680410,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16189891685,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16572609674,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19535010536,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14887544322,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19587314538,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18745672651,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12915147478,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12227763181,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12218438787,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13187932100,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15785489114,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18312185362,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17242824016,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13949026160,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12342621684,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17178323328,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16274137806,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15908565899,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14842919824,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13534204921,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16275302846,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16284977386,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12096810501,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13343393950,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17595291256,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16589754351,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18335791993,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19457364814,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18639161955,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16416720179,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17445306261,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16978800116,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19347177668,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19992042154,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12938958030,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14087680472,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13758477439,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15716599845,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13369047757,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14238142921,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12642959162,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18868537719,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14718305146,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12176976617,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19215373453,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12104127435,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12539048453,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13065357371,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14929143944,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16597183821,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12326449145,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19912332848,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16606801994,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16552692856,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18918195344,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17133825435,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12647588653,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12315554753,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17756043047,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13344948993,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17538424072,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14773567595,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19633955383,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13162309164,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12983260249,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12469839542,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13288982477,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19073307023,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13246408913,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14992537367,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13439188926,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18842797223,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17589166501,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15189885411,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17093560969,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19167697344,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17082599291,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15155407355,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18906170088,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18103426735,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14999394079,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13774988099,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17549732476,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13268606778,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18343557943,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18794435828,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19843498211,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13489924622,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14989551792,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19244826619,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17274805370,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14777491768,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17047769373,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15744689588,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18687479738,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13293343527,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13137522018,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12654274772,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14619925020,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19339409384,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18737195371,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17346576151,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17125834715,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13299026050,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18784456697,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12716377190,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14824087065,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12932497337,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17669349005,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12066873735,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19958331081,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16095608041,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15115002365,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19836883707,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15026410410,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14893428078,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13807706970,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13908928658,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15406071194,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19575789334,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17648324648,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14153363783,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16167230794,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17072063222,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16084366984,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16508227156,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18689768129,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17984875674,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16422308774,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14623489987,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14645924335,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12927603382,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12847696882,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15259291895,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17613496534,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16409487724,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17142627627,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16898297257,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12496267837,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18256151672,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19332361152,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17635978746,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12488022722,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13339983848,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14028661813,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18823960297,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17415824229,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13323102126,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19507984050,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19318110658,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15188800850,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15614244022,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14614360640,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17925803708,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12498177402,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14677795157,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15375869547,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17772039248,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15307535702,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16742037863,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12072420577,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19496811348,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17083484169,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14137760086,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18622002892,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16249262227,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16135115967,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19533880008,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18946378179,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19865376788,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14446237092,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18596296959,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13757563509,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12356620295,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14273564346,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16334679928,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13267511321,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16886447707,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17936138106,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16977847078,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14266859824,,,,Paris,,75460,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12666971739,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12065443535,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18302883637,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12108424226,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18908846331,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15943075216,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16345418468,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18483638306,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12408515397,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14795008861,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13146762157,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12952664445,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12607629439,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19943320586,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19468119607,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13562090491,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13364219854,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18675549757,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17182237579,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14863172125,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12365157960,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14663105578,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14348473634,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19617015335,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15944377514,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15912289587,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18992268735,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18405838260,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15009020461,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12668302472,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17167702093,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18293006941,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15688134879,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16066313340,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12846098520,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17068803105,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18336891664,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16562840563,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12838409110,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13014946323,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17903199676,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13607042781,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12202808052,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12067609630,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12509584515,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16208833616,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17715257164,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16123866583,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18892566786,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15115230609,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13165384788,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16913775885,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17192348323,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13843268204,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13409953911,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19212551746,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13076871403,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12613247792,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17653565533,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19007553625,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19129357045,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16993252902,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16399839989,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15377068952,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15888198145,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15102244774,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15104306692,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15208684883,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14247845107,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17047140223,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17156596434,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18827577691,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12868306825,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14667876076,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18234563752,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19712602029,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19602586391,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12734062364,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17389654212,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17949334279,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12254227812,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12117852031,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14404091502,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16146809900,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16822094517,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18764907490,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19817968340,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16747085057,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14013104514,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13697936816,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15129854910,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19719793050,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14603474937,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17145392305,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18629175775,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13415159227,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18465659865,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15685199841,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14256705970,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12103788109,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12287452198,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19673796956,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14758463682,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13047394644,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13684444508,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16972774705,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14796495186,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17167513013,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16504554955,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15018878409,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16102421138,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17715729127,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12022526616,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17279505071,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16172486607,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19236239554,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16334166483,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14263815576,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14316481330,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14795925689,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13224159606,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12396618138,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14955348663,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15829556077,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14922707735,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18642117566,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15993946725,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13966879905,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13715622677,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13488397804,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17938743562,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15798159102,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15725959539,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12058969913,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19717604898,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17904240949,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13847845239,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16577018421,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13053030337,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12247805430,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17242777107,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18017482901,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12756692167,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13556226113,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12795669811,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13586055664,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17719545607,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19302010231,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19094461863,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12444679294,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14196621564,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18755605519,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17302341328,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19908512505,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16714138404,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14658523614,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18092167354,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14055848584,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17089865512,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17859502388,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12329041537,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15718309996,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16377433978,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18186040376,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15603775238,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12249491032,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14606737967,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13397613215,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15579125523,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14006680929,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18675250869,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16268683069,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17658891928,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12382756587,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16856214009,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16583607616,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12116369043,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19014532743,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17375200869,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17768000285,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13779750155,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17013839347,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17098638796,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17228221334,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14598580134,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13286472881,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19454536672,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12199185699,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16885153873,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19614774377,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13199816895,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18448844012,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13416742036,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17427446025,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12167864150,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13178870567,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13108941375,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14397946594,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14805084824,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17373071033,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12833942695,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13235250754,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12566868759,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17583214150,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12942691830,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17536750945,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18243708020,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15157020119,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12987541584,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16825643646,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15108168100,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14313475339,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18904153236,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14139175654,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15583138475,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14767949076,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15844107609,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12088129187,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19794390694,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16733432307,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16216798802,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13124857545,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12564094368,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12939381374,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12025155648,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19056192488,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15784623813,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14323508350,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15572026060,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15747367152,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12714301859,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12546185646,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16905583864,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12362339006,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12584202862,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15195898149,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14207154574,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12359450807,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17165256154,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19325118253,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16076781574,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12485060304,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18304626338,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++18657527559,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13544646270,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17795038060,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13049951330,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19443145239,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14478719194,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19618115028,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++17853897627,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++13006184766,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16255916699,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12367284016,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15454211117,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12037128523,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14195162442,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16087987796,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++12995977377,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++19107501609,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++15622287400,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++14072596365,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
++16365946950,,,,Wichita Falls,,76301,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT

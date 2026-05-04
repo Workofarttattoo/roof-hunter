@@ -1,0 +1,2 @@
+# Deprecated local path — use ../training/dataset.yaml (repo root) for YOLO training.
+# See: training/dataset.yaml , training/labeling_guide.md , scripts/train_roof_damage_yolo.py

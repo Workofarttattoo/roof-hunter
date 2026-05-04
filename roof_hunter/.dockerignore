@@ -1,0 +1,10 @@
+.git
+**/__pycache__
+*.py[cod]
+*.log
+.env
+.env.*
+web_dashboard/node_modules
+**/node_modules
+leads_manifests/*.db-shm
+leads_manifests/*.db-wal

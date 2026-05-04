@@ -1,0 +1,6 @@
+# Optional: roof CV worker (aws_discovery_worker, yolo_detector, ai_damage_engine URL mode)
+# pip install -r requirements-vision.txt
+ultralytics>=8.3.0
+opencv-python-headless>=4.10.0
+torch>=2.2.0
+numpy>=1.26.0

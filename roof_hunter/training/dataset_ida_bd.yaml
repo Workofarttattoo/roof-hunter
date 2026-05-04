@@ -1,0 +1,12 @@
+# Ida-BD (PRJ-3563) native schema — 4 building damage levels (xBD-style masks).
+# Generate: python3 scripts/ingest_ida_bd_to_yolo.py --ida-root <path/to/PRJ-3563> --schema ida
+
+path: ../training_data/yolo_ida_bd
+train: images/train
+val: images/val
+
+names:
+  0: ida_no_damage
+  1: ida_minor
+  2: ida_major
+  3: ida_destroyed

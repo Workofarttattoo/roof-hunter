@@ -1,0 +1,20 @@
+# YOLO data config — paths relative to this file's parent (repo root).
+# Layout:
+#   training_data/yolo/images/train/*.jpg
+#   training_data/yolo/images/val/*.jpg
+#   training_data/yolo/labels/train/*.txt   (one label file per image, same stem)
+#   training_data/yolo/labels/val/*.txt
+#
+# After training, set ROOF_YOLO_WEIGHTS to runs/damage/weights/best.pt (or your --project).
+
+path: ../training_data/yolo
+train: images/train
+val: images/val
+
+names:
+  0: hail_hit
+  1: wind_uplift
+  2: shingle_loss
+  3: ridge_vent_damage
+  4: metal_dent_crease
+  5: tree_debris_strike

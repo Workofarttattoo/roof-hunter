@@ -1,0 +1,4 @@
+phone_number,first_name,last_name,property_address,city,state,zip_code,hail_date,hail_size,storm_type,damage_probability,structures_hit,image_findings,lead_priority
+,,,,,,,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
+,,,,,,,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT
+,,,,,,,,,Hail,0.0,Main roof surface,Forensic index 0.0% aligned with reported hail event; property flagged for verification outreach.,PRIORITY_3_LOW_INTENT

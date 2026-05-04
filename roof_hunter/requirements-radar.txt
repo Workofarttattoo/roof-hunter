@@ -1,0 +1,9 @@
+# MRMS MESH hail radar ingestion (src/mrms_mesh_ingest.py).
+# Install: pip install -r requirements-radar.txt
+# Requires a working ecCodes library; the `eccodes` PyPI package usually bundles it.
+# If import fails, use conda: conda install -c conda-forge eccodes cfgrib xarray
+xarray>=2023.7.0
+cfgrib>=0.9.10
+eccodes>=2.38.0
+numpy>=1.24.0
+requests>=2.28.0

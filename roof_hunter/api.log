@@ -1,0 +1,6 @@
+INFO:     Started server process [85582]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-04-28 00:32:19,666 - INFO - 📡 Serving leads to dashboard (q=None, zip=None, material=ALL)
+INFO:     127.0.0.1:54384 - "GET /api/leads/teasers HTTP/1.1" 200 OK

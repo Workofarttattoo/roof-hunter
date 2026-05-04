@@ -1,0 +1,15 @@
+# Ida-BD mapped onto roof_hunter YOLO names (proxy for satellite hurricane damage).
+# minor → wind_uplift; major + destroyed → shingle_loss. Other classes stay sparse.
+# Generate: python3 scripts/ingest_ida_bd_to_yolo.py --ida-root <path> --schema roof
+
+path: ../training_data/yolo_ida_roof_proxy
+train: images/train
+val: images/val
+
+names:
+  0: hail_hit
+  1: wind_uplift
+  2: shingle_loss
+  3: ridge_vent_damage
+  4: metal_dent_crease
+  5: tree_debris_strike

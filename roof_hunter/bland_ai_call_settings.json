@@ -1,0 +1,34 @@
+{
+  "dynamic_variables": {
+    "first_name": "{{string}}",
+    "last_name": "{{string}}",
+    "property_address": "{{string}}",
+    "city": "{{string}}",
+    "state": "{{string}}",
+    "hail_date": "{{string}}",
+    "hail_size": "{{number}}",
+    "storm_type": "{{string}}",
+    "damage_probability": "{{number}}",
+    "structures_hit": "{{string}}",
+    "image_findings": "{{string}}",
+    "lead_priority": "{{string}}"
+  },
+  "analysis_schema": {
+    "lead_priority": "string (e.g. CATASTROPHIC, HIGH, MEDIUM)",
+    "homeowner_name": "string",
+    "property_address": "string",
+    "inspection_booked": "boolean",
+    "call_outcome": "string (e.g. INTERESTED, NOT_INTERESTED, WRONG_NUMBER)",
+    "notes": "string (detailed forensic context discussed)",
+    "damage_confirmed_by_user": "boolean"
+  },
+  "global_settings": {
+    "persona_id": "0f07d918-ba48-43c4-aafa-a79b49060b9c",
+    "wait_for_greeting": true,
+    "record": true,
+    "max_duration": 8,
+    "voice_id": "sarah_v2_premium",
+    "language": "en-US",
+    "webhook_url": "https://script.google.com/macros/s/AKfycbwcEyyU9EnjCFEQor34tfz5nYe76q3qc2ZMjUuijIqMuCsjAz-OmcFaRkaONp3JYbcI/exec"
+  }
+}
