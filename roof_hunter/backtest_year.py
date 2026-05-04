@@ -1,15 +1,18 @@
-"""12-Month S2S Backtest and Tuning Engine for Roof Hunter."""
+"""Statewide 12-Month S2S Backtest for Oklahoma - Roof Hunter Pro."""
 
 import sys
-from pathlib import Path
-from datetime import date, timedelta
 import json
 import logging
+from pathlib import Path
+from datetime import date, timedelta
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# Syncing paths to QuLabInfinite
+# Syncing paths to project root
 ROOT = Path(__file__).resolve().parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
+if str(ROOT.parent) not in sys.path:
+    sys.path.insert(0, str(ROOT.parent))
 
 from validate_last_week import (
     fetch_last_week_weather, 
@@ -17,73 +20,97 @@ from validate_last_week import (
     fetch_spc_reports, 
     match_reports_to_forecast
 )
-from roof_hunter.roof_hunter_digital_twin import RoofHunterWeatherTwin
-from roof_hunter.models import ForecastState
+from src.weather_twin.roof_hunter_digital_twin import RoofHunterWeatherTwin
+from src.weather_twin.models import ForecastState
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("BacktestEngine")
+logger = logging.getLogger("StatewideBacktest")
 
-def run_yearly_backtest(lat: float, lon: float):
-    end_date = date.today() - timedelta(days=1)
-    start_date = end_date - timedelta(days=365)
+# Top 15 ROI Population Centers in Oklahoma
+OK_GRID = [
+    {"city": "Oklahoma City", "lat": 35.4676, "lon": -97.5164},
+    {"city": "Tulsa", "lat": 36.1540, "lon": -95.9928},
+    {"city": "Norman", "lat": 35.2226, "lon": -97.4395},
+    {"city": "Broken Arrow", "lat": 36.0609, "lon": -95.7975},
+    {"city": "Edmond", "lat": 35.6528, "lon": -97.4781},
+    {"city": "Lawton", "lat": 34.6036, "lon": -98.3959},
+    {"city": "Moore", "lat": 35.3394, "lon": -97.4867},
+    {"city": "Midwest City", "lat": 35.4495, "lon": -97.3967},
+    {"city": "Enid", "lat": 36.3956, "lon": -97.8784},
+    {"city": "Stillwater", "lat": 36.1156, "lon": -97.0584},
+    {"city": "Muskogee", "lat": 35.7479, "lon": -95.3697},
+    {"city": "Bartlesville", "lat": 36.7473, "lon": -95.9761},
+    {"city": "Shawnee", "lat": 35.3273, "lon": -96.9253},
+    {"city": "Owasso", "lat": 36.2734, "lon": -95.8219},
+    {"city": "Ponca City", "lat": 36.7070, "lon": -97.0856}
+]
+
+def process_location(location, start_date, end_date):
+    lat, lon = location['lat'], location['lon']
+    city = location['city']
     
-    logger.info(f"Starting 12-Month Backtest for {lat}, {lon}")
-    logger.info(f"Period: {start_date} to {end_date}")
-    
-    # We run in monthly batches to manage memory and API limits
     all_summaries = []
     current_start = start_date
     
     while current_start < end_date:
-        current_end = min(current_start + timedelta(days=30), end_date)
-        logger.info(f"Processing Batch: {current_start} -> {current_end}")
-        
+        current_end = min(current_start + timedelta(days=90), end_date) # 3-month batches for speed
         try:
-            # 1. Fetch Historical Weather
             weather = fetch_last_week_weather(lat, lon, current_end, current_start)
             payload = build_forecast_payload(weather, lat, lon)
-            
-            # 2. Simulate Digital Twin
             twin = RoofHunterWeatherTwin([ForecastState.from_dict(item) for item in payload['forecast']])
             history = twin.simulate()
-            
-            # 3. Fetch Ground Truth (SPC Reports)
-            reports = fetch_spc_reports(lat, lon, current_start, current_end, radius_km=50.0)
-            
-            # 4. Match and Score
+            reports = fetch_spc_reports(lat, lon, current_start, current_end, radius_km=40.0)
             metrics = match_reports_to_forecast(history, reports)
             all_summaries.append(metrics['summary'])
-            
-            logger.info(f"Batch Result: {metrics['summary']['match_rate']*100}% Strike Match Rate")
-            
         except Exception as e:
-            logger.error(f"Error in batch {current_start}: {e}")
-            
+            logger.error(f"Error in {city} batch {current_start}: {e}")
         current_start = current_end + timedelta(days=1)
+        
+    return {
+        "city": city,
+        "precision": sum(s['precision'] for s in all_summaries) / len(all_summaries) if all_summaries else 0,
+        "recall": sum(s['recall'] for s in all_summaries) / len(all_summaries) if all_summaries else 0,
+        "matches": sum(s['matched_report_count'] for s in all_summaries)
+    }
+
+def run_statewide_audit():
+    end_date = date.today() - timedelta(days=1)
+    start_date = end_date - timedelta(days=365)
     
-    # Final Aggregation
+    logger.info(f"RE-INITIATING STATEWIDE AUDIT: 15 Cities | 12 Months | {start_date} to {end_date}")
+    
+    results = []
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        futures = [executor.submit(process_location, loc, start_date, end_date) for loc in OK_GRID]
+        for future in as_completed(futures):
+            res = future.result()
+            results.append(res)
+            logger.info(f"FINISHED: {res['city']} | Recall: {res['recall']*100:.1f}% | Precision: {res['precision']*100:.1f}%")
+            
+    final_recall = sum(r['recall'] for r in results) / len(results)
+    final_precision = sum(r['precision'] for r in results) / len(results)
+    total_strikes = sum(r['matches'] for r in results)
+    
     final_report = {
-        "location": {"lat": lat, "lon": lon},
+        "state": "Oklahoma",
         "period": {"start": str(start_date), "end": str(end_date)},
-        "batches": all_summaries,
-        "aggregate": {
-            "avg_precision": sum(s['precision'] for s in all_summaries) / len(all_summaries) if all_summaries else 0,
-            "avg_recall": sum(s['recall'] for s in all_summaries) / len(all_summaries) if all_summaries else 0,
-            "total_matches": sum(s['matched_report_count'] for s in all_summaries)
-        }
+        "metrics": {
+            "statewide_recall": final_recall,
+            "statewide_precision": final_precision,
+            "total_hail_strikes_tracked": total_strikes
+        },
+        "city_breakdown": results
     }
     
-    report_path = Path("backtest_report_yearly.json")
-    with open(report_path, "w") as f:
+    with open("statewide_ok_audit.json", "w") as f:
         json.dump(final_report, f, indent=2)
-    
+        
     print("\n" + "="*50)
-    print("12-MONTH BACKTEST COMPLETE")
-    print(f"Total Matches Identified: {final_report['aggregate']['total_matches']}")
-    print(f"Final Precision: {final_report['aggregate']['avg_precision']*100}%")
-    print(f"Final Recall: {final_report['aggregate']['avg_recall']*100}%")
+    print("STATEWIDE OKLAHOMA AUDIT COMPLETE")
+    print(f"Verified State Recall: {final_recall*100:.2f}%")
+    print(f"Verified State Precision: {final_precision*100:.2f}%")
+    print(f"Total Hail Strikes Captured: {total_strikes}")
     print("="*50)
 
 if __name__ == "__main__":
-    # Test against Moore, OK (Historical Hotspot)
-    run_yearly_backtest(35.3394, -97.4867)
+    run_statewide_audit()
