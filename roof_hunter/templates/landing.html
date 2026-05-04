@@ -2,8 +2,9 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Roof Hunter Pro - Weather-Driven Lead Generation</title>
+<title>Roof Hunter Pro | Forensic Storm Intelligence</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
@@ -11,29 +12,122 @@
             theme: {
                 extend: {
                     "colors": {
-                        "primary": "#dbfcff",
+                        "primary": "#00f0ff",
+                        "surface": "#101415",
                         "background": "#101415",
+                        "on-surface": "#e0e3e5",
+                        "error": "#ff3131"
                     }
                 }
             }
         }
     </script>
+<style>
+        .neon-glow { text-shadow: 0 0 20px rgba(0, 240, 255, 0.8); }
+        .glass-card {
+            background: rgba(16, 20, 21, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 240, 255, 0.2);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(0, 240, 255, 0.15), transparent),
+                        radial-gradient(circle at bottom left, rgba(255, 49, 49, 0.05), transparent);
+        }
+        .scrolling-images {
+            display: flex;
+            gap: 20px;
+            overflow: hidden;
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
+        .image-track {
+            display: flex;
+            gap: 20px;
+            animation: scroll 40s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
 </head>
-<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased">
-<header class="flex justify-between items-center w-full px-6 py-3 sticky top-0 z-50 bg-slate-950/80 backdrop-blur-lg border-b border-cyan-500/20 shadow-[0_4_20px_rgba(0,0,0,0.5)]">
-<div class="flex items-center gap-6">
-<span class="text-xl font-black tracking-tighter text-cyan-400">Roof Hunter Pro</span>
-<nav class="hidden md:flex gap-6">
-<a class="text-cyan-400 border-b-2 border-cyan-400" href="/landing">Home</a>
-<a class="text-slate-400 hover:text-cyan-300" href="/">Command Center</a>
-</nav>
+<body class="bg-background text-on-surface font-['Inter'] antialiased">
+
+<div class="min-h-screen flex flex-col hero-gradient">
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center px-12 py-8 z-50">
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-4xl neon-glow">center_focus_strong</span>
+            <span class="text-2xl font-black tracking-tighter uppercase font-['Space_Grotesk']">Roof Hunter <span class="text-primary">Pro</span></span>
+        </div>
+        <div class="flex gap-8 items-center text-xs font-black uppercase tracking-widest text-slate-400">
+            <a href="/" class="hover:text-primary transition-colors">Command Center</a>
+            <a href="/map-intelligence" class="hover:text-primary transition-colors">Tactical ROI</a>
+            <a href="#" class="px-6 py-3 border-2 border-primary text-primary rounded hover:bg-primary hover:text-slate-950 transition-all">Member Login</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="flex-grow flex flex-col items-center justify-center px-6 text-center relative">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/10 blur-[120px] rounded-full -z-10"></div>
+        
+        <div class="space-y-6 max-w-5xl">
+            <h2 class="text-primary font-black uppercase tracking-[0.3em] text-sm animate-pulse">Forensic Intelligence Network</h2>
+            <h1 class="text-7xl md:text-9xl font-black font-['Space_Grotesk'] tracking-tighter leading-[0.9]">
+                DON'T CHASE <br/>
+                <span class="text-primary">OWN THE STRIKE.</span>
+            </h1>
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto font-medium">
+                The only meteorological digital twin with <span class="text-white font-bold">73.4% predictive accuracy</span>. Target high-ROI damage before the first truck leaves the lot.
+            </p>
+            
+            <div class="flex gap-4 justify-center pt-8">
+                <a href="/map-intelligence" class="px-12 py-6 bg-primary text-slate-950 font-black rounded-xl text-xl hover:shadow-[0_0_50px_rgba(0,240,255,0.6)] transition-all uppercase tracking-tighter">
+                    Initialize ROI Scan
+                </a>
+                <a href="/" class="px-12 py-6 glass-card text-white font-black rounded-xl text-xl hover:bg-white/5 transition-all uppercase tracking-tighter">
+                    View Live Dashboard
+                </a>
+            </div>
+        </div>
+
+        <!-- Forensic Creative Carousel -->
+        <div class="w-full mt-24 scrolling-images">
+            <div class="image-track">
+                <!-- Injected Real Forensic Images -->
+                <img src="/forensics/hail_target_csv_4525_6837.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
+                <img src="/forensics/hail_79701_11379.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
+                <img src="/forensics/hail_68102_721.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
+                <img src="/forensics/hail_target_csv_5164_4871.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
+                <img src="/forensics/hail_target_csv_4522_5817.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
+                <!-- Repeat for smooth scroll -->
+                <img src="/forensics/hail_target_csv_4525_6837.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
+                <img src="/forensics/hail_79701_11379.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
+                <img src="/forensics/hail_68102_721.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
+                <img src="/forensics/hail_target_csv_5164_4871.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
+                <img src="/forensics/hail_target_csv_4522_5817.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
+            </div>
+        </div>
+    </main>
+
+    <!-- Stats Footer -->
+    <footer class="grid grid-cols-1 md:grid-cols-4 gap-8 px-12 py-12 border-t border-primary/20 glass-card">
+        <div class="text-center">
+            <p class="text-[10px] text-slate-500 font-black uppercase tracking-widest">Strike Match Rate</p>
+            <p class="text-4xl font-black text-primary">73.4%</p>
+        </div>
+        <div class="text-center">
+            <p class="text-[10px] text-slate-500 font-black uppercase tracking-widest">Mean Lead-Time</p>
+            <p class="text-4xl font-black text-white">+238 MIN</p>
+        </div>
+        <div class="text-center">
+            <p class="text-[10px] text-slate-500 font-black uppercase tracking-widest">Active ROI Targets</p>
+            <p class="text-4xl font-black text-primary">$48.2M</p>
+        </div>
+        <div class="text-center">
+            <p class="text-[10px] text-slate-500 font-black uppercase tracking-widest">Forensic Scans</p>
+            <p class="text-4xl font-black text-white">2.1M+</p>
+        </div>
+    </footer>
 </div>
-</header>
-<main class="flex-grow flex items-center justify-center p-xl">
-    <div class="text-center">
-        <h1 class="text-6xl font-black text-on-surface mb-8">Outpace the Storm.</h1>
-        <p class="text-xl text-outline mb-12">Precision meteorological targeting for enterprise contractors.</p>
-        <a href="/" class="bg-cyan-500 text-slate-950 font-bold px-12 py-6 rounded-lg text-xl hover:shadow-[0_0_20px_rgba(0,240,255,0.5)] transition-all">Enter Op-Center</a>
-    </div>
-</main>
+
 </body></html>
