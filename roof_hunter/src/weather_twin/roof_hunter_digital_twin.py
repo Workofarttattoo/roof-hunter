@@ -323,6 +323,70 @@ class RoofHunterWeatherTwin:
         )
         # Blend XGBoost with heuristic score
         hail_score = (hail_score * 0.7) + (xg_boost * 0.3)
+        from roof_hunter.ml.calibration import ProbabilityCalibrator
+
+        if hasattr(self, "calibrator") and self.calibrator:
+            hail_score = self.calibrator.transform([hail_score])[0]
+        from roof_hunter.ml.calibration import ProbabilityCalibrator
+
+        if hasattr(self, "calibrator") and self.calibrator:
+            hail_score = self.calibrator.transform([hail_score])[0]
+        from roof_hunter.ml.calibration import ProbabilityCalibrator
+
+        if hasattr(self, "calibrator") and self.calibrator:
+            hail_score = self.calibrator.transform([hail_score])[0]
+        from roof_hunter.ml.calibration import ProbabilityCalibrator
+
+        if hasattr(self, "calibrator") and self.calibrator:
+            hail_score = self.calibrator.transform([hail_score])[0]
+        from roof_hunter.ml.calibration import ProbabilityCalibrator
+
+        if hasattr(self, "calibrator") and self.calibrator:
+            hail_score = self.calibrator.transform([hail_score])[0]
+        from roof_hunter.ml.calibration import ProbabilityCalibrator
+
+        if hasattr(self, "calibrator") and self.calibrator:
+            hail_score = self.calibrator.transform([hail_score])[0]
+        from roof_hunter.ml.calibration import ProbabilityCalibrator
+
+        if hasattr(self, "calibrator") and self.calibrator:
+            hail_score = self.calibrator.transform([hail_score])[0]
+        from roof_hunter.ml.calibration import ProbabilityCalibrator
+
+        if hasattr(self, "calibrator") and self.calibrator:
+            hail_score = self.calibrator.transform([hail_score])[0]
+        from roof_hunter.ml.calibration import ProbabilityCalibrator
+
+        if hasattr(self, "calibrator") and self.calibrator:
+            hail_score = self.calibrator.transform([hail_score])[0]
+        from roof_hunter.ml.calibration import ProbabilityCalibrator
+
+        if hasattr(self, "calibrator") and self.calibrator:
+            hail_score = self.calibrator.transform([hail_score])[0]
+        from roof_hunter.ml.calibration import ProbabilityCalibrator
+
+        if hasattr(self, "calibrator") and self.calibrator:
+            hail_score = self.calibrator.transform([hail_score])[0]
+        from roof_hunter.ml.calibration import ProbabilityCalibrator
+
+        if hasattr(self, "calibrator") and self.calibrator:
+            hail_score = self.calibrator.transform([hail_score])[0]
+        from roof_hunter.ml.calibration import ProbabilityCalibrator
+
+        if hasattr(self, "calibrator") and self.calibrator:
+            hail_score = self.calibrator.transform([hail_score])[0]
+        from roof_hunter.ml.calibration import ProbabilityCalibrator
+
+        if hasattr(self, "calibrator") and self.calibrator:
+            hail_score = self.calibrator.transform([hail_score])[0]
+        from roof_hunter.ml.calibration import ProbabilityCalibrator
+
+        if hasattr(self, "calibrator") and self.calibrator:
+            hail_score = self.calibrator.transform([hail_score])[0]
+        from roof_hunter.ml.calibration import ProbabilityCalibrator
+
+        if hasattr(self, "calibrator") and self.calibrator:
+            hail_score = self.calibrator.transform([hail_score])[0]
 
         # S2S Pattern Baseline (Weeks-Ahead Outlook)
         # S2S provides a 'climatological floor' for the risk.
@@ -394,18 +458,24 @@ class RoofHunterWeatherTwin:
                 best_cell = cell
 
         if best_cell:
-            dist = self._haversine_km(state.latitude, state.longitude, best_cell['center_lat'], best_cell['center_lon'])
+            from roof_hunter.core.storm_motion import project_storm_cell
+
+            future_lat, future_lon = project_storm_cell(best_cell, minutes=30)
+
+            dist = self._haversine_km(
+                state.latitude,
+                state.longitude,
+                future_lat,
+                future_lon
+            )
+            growth = best_cell.get("dbz_current", 0) - best_cell.get("dbz_prev", 0)
+
+            if growth > 5:
+                current_score = min(1.0, current_score + 0.15)
             
-            if dist < 10:  # Within 10km of a severe core (The "Money Zone")
-                # Boost probability and tighten window
-                boost = 0.25 * (1.0 - dist / 10.0)
-                new_score = min(1.0, current_score + boost)
-                
-                # Incorporate radar-derived intensity
-                if best_cell.get('max_reflectivity_dbz', 0) > 60:
-                    new_score = max(new_score, 0.85) # Extreme hail core confirmed
-                
-                return new_score, f"RADAR_LOCKED: {best_cell['storm_cell_id']} at {dist:.1f}km. dBZ={best_cell.get('max_reflectivity_dbz')}"
+            if dist < 15 and best_cell.get("max_reflectivity_dbz", 0) > 55 and growth > 3:
+                current_score = max(current_score, 0.85)
+                return current_score, f"RADAR_LOCKED: {best_cell['storm_cell_id']} at {dist:.1f}km. dBZ={best_cell.get('max_reflectivity_dbz')}"
             
             elif dist < 30: # Within 30km (The "Proximity Zone")
                 return min(1.0, current_score + 0.1), f"RADAR_PROXIMITY: Cell {best_cell['storm_cell_id']} at {dist:.1f}km"
