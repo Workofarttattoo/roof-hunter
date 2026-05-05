@@ -1,10 +1,13 @@
-.git
-**/__pycache__
-*.py[cod]
+# AERO-COMMAND: Build Optimization
+training_data/
+venv/
+.venv*/
+data_cache/
+models/
+runs/
 *.log
+*.pt
+__pycache__/
+.git/
 .env
-.env.*
-web_dashboard/node_modules
-**/node_modules
-leads_manifests/*.db-shm
-leads_manifests/*.db-wal
+leads_manifests/training_results/

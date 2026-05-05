@@ -356,8 +356,8 @@ class RoofHunterWeatherTwin:
         if radar_note:
             hail_core['note'] += f" | {radar_note}"
 
-        hail_core['risk_score'] = round((hail_score * 0.6 + tornado_score * 0.4) * 100, 2)
-        hail_core['hail_probability'] = round(hail_score, 3)
+        hail_core['risk_score'] = round(min(1.0, (hail_score * 0.6 + tornado_score * 0.4)), 3)
+        hail_core['hail_probability'] = round(min(1.0, hail_score), 3)
         hail_core['tornado_probability'] = round(tornado_score, 3)
         hail_core['lightning_hail_boost'] = round(lightning_boost, 4)
 

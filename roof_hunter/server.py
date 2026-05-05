@@ -50,6 +50,13 @@ def property_intel():
 def map_3d():
     return render_template('map_3d.html')
 
+@app.route('/api/forensic_delta')
+def forensic_delta():
+    from src.topological_forensics import TopologicalForensics
+    engine = TopologicalForensics()
+    address = request.args.get('address', 'Dallas Metro Target')
+    return jsonify(engine.get_mock_delta(address))
+
 @app.route('/api/active_psas')
 def get_active_psas():
     try:

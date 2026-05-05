@@ -151,11 +151,24 @@
 
     // Mouse Interaction
     const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
-    handler.setInputAction(function(click) {
+    handler.setInputAction(async function(click) {
         const pickedObject = viewer.scene.pick(click.position);
         if (Cesium.defined(pickedObject)) {
             const lead = pickedObject.id.properties;
-            alert(`AERO-COMMAND 3D INTEL\n\nTarget: ${lead.address}\nOwner: ${lead.contact}\nROI: ${lead.revenue}`);
+            
+            // Perform Topological Scan
+            const res = await fetch(`/api/forensic_delta?address=${encodeURIComponent(lead.address)}`);
+            const delta = await res.json();
+            
+            let alertMsg = `AERO-COMMAND 3D INTEL\n\nTarget: ${lead.address}\nOwner: ${lead.contact}\nROI: ${lead.revenue}\n\n`;
+            if (delta.status === "CRITICAL_STRUCTURAL_LOSS") {
+                const probPercent = (delta.probability_score * 100).toFixed(1);
+                alertMsg += `⚠️ TOPOLOGICAL ALERT: ${delta.visual_agent_assessment}\nDamage Prob: ${probPercent}%\nMax Drop: ${delta.max_drop_meters}m detected.`;
+            } else {
+                alertMsg += `✅ TOPOLOGICAL STATUS: No structural deviations detected.`;
+            }
+            
+            alert(alertMsg);
         }
     }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 </script>
