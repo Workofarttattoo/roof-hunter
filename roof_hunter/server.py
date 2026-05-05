@@ -27,12 +27,12 @@ def get_db_connection():
     return conn
 
 @app.route('/')
-def dashboard():
-    return render_template('dashboard.html')
-
-@app.route('/landing')
 def landing():
     return render_template('landing.html')
+
+@app.route('/dashboard')
+def dashboard():
+    return render_template('dashboard.html')
 
 @app.route('/storm-dashboard')
 def storm_dashboard():
