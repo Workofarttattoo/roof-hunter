@@ -1,0 +1,218 @@
+[
+  {
+    "city": "Oklahoma City",
+    "state": "OK",
+    "peak_risk_date": "2026-05-05",
+    "peak_score": 0.565,
+    "peak_intensity": "Low",
+    "daily_breakdown": [
+      {
+        "date": "2026-05-05",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-06",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-07",
+        "score": 0.565,
+        "intensity": "Low"
+      }
+    ]
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "peak_risk_date": "2026-05-05",
+    "peak_score": 0.565,
+    "peak_intensity": "Low",
+    "daily_breakdown": [
+      {
+        "date": "2026-05-05",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-06",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-07",
+        "score": 0.565,
+        "intensity": "Low"
+      }
+    ]
+  },
+  {
+    "city": "Moore",
+    "state": "OK",
+    "peak_risk_date": "2026-05-05",
+    "peak_score": 0.565,
+    "peak_intensity": "Low",
+    "daily_breakdown": [
+      {
+        "date": "2026-05-05",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-06",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-07",
+        "score": 0.565,
+        "intensity": "Low"
+      }
+    ]
+  },
+  {
+    "city": "Edmond",
+    "state": "OK",
+    "peak_risk_date": "2026-05-05",
+    "peak_score": 0.565,
+    "peak_intensity": "Low",
+    "daily_breakdown": [
+      {
+        "date": "2026-05-05",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-06",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-07",
+        "score": 0.565,
+        "intensity": "Low"
+      }
+    ]
+  },
+  {
+    "city": "Dallas",
+    "state": "TX",
+    "peak_risk_date": "2026-05-05",
+    "peak_score": 0.565,
+    "peak_intensity": "Low",
+    "daily_breakdown": [
+      {
+        "date": "2026-05-05",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-06",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-07",
+        "score": 0.565,
+        "intensity": "Low"
+      }
+    ]
+  },
+  {
+    "city": "Fort Worth",
+    "state": "TX",
+    "peak_risk_date": "2026-05-05",
+    "peak_score": 0.565,
+    "peak_intensity": "Low",
+    "daily_breakdown": [
+      {
+        "date": "2026-05-05",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-06",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-07",
+        "score": 0.565,
+        "intensity": "Low"
+      }
+    ]
+  },
+  {
+    "city": "Austin",
+    "state": "TX",
+    "peak_risk_date": "2026-05-05",
+    "peak_score": 0.565,
+    "peak_intensity": "Low",
+    "daily_breakdown": [
+      {
+        "date": "2026-05-05",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-06",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-07",
+        "score": 0.565,
+        "intensity": "Low"
+      }
+    ]
+  },
+  {
+    "city": "San Antonio",
+    "state": "TX",
+    "peak_risk_date": "2026-05-05",
+    "peak_score": 0.565,
+    "peak_intensity": "Low",
+    "daily_breakdown": [
+      {
+        "date": "2026-05-05",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-06",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-07",
+        "score": 0.565,
+        "intensity": "Low"
+      }
+    ]
+  },
+  {
+    "city": "Waco",
+    "state": "TX",
+    "peak_risk_date": "2026-05-05",
+    "peak_score": 0.565,
+    "peak_intensity": "Low",
+    "daily_breakdown": [
+      {
+        "date": "2026-05-05",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-06",
+        "score": 0.565,
+        "intensity": "Low"
+      },
+      {
+        "date": "2026-05-07",
+        "score": 0.565,
+        "intensity": "Low"
+      }
+    ]
+  }
+]

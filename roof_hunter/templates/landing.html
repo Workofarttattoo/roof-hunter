@@ -52,6 +52,16 @@
 </head>
 <body class="bg-background text-on-surface font-['Inter'] antialiased">
 
+<!-- Emergency Alert Ticker -->
+<div id="alert-ticker" class="hidden w-full bg-red-600 text-white font-black py-2 px-6 overflow-hidden z-[100] relative">
+    <div class="flex items-center gap-4 animate-pulse">
+        <span class="material-symbols-outlined">warning</span>
+        <div class="whitespace-nowrap flex gap-12" id="ticker-content">
+            <!-- Injected by PSA Engine -->
+        </div>
+    </div>
+</div>
+
 <div class="min-h-screen flex flex-col hero-gradient">
     <!-- Navigation -->
     <nav class="flex justify-between items-center px-12 py-8 z-50">
@@ -129,5 +139,25 @@
         </div>
     </footer>
 </div>
+
+<script>
+    async function checkAlerts() {
+        try {
+            const res = await fetch('/api/active_psas');
+            const psas = await res.json();
+            const ticker = document.getElementById('alert-ticker');
+            const content = document.getElementById('ticker-content');
+            
+            if (psas && psas.length > 0) {
+                ticker.classList.remove('hidden');
+                content.innerHTML = psas.map(p => `<span>${p.message}</span>`).join('');
+            } else {
+                ticker.classList.add('hidden');
+            }
+        } catch (e) {}
+    }
+    setInterval(checkAlerts, 30000); // Check every 30s
+    checkAlerts();
+</script>
 
 </body></html>

@@ -42,6 +42,14 @@ def storm_dashboard():
 def map_intelligence():
     return render_template('map_intelligence.html')
 
+@app.route('/api/active_psas')
+def get_active_psas():
+    try:
+        with open('active_psas.json', 'r') as f:
+            return jsonify(json.load(f))
+    except:
+        return jsonify([])
+
 @app.route('/api/trigger_alert', methods=['POST'])
 def trigger_alert():
     """
