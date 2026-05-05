@@ -195,6 +195,22 @@ class NEXRADLevel2:
         else:
             return 0.0
 
+    def refine_hail_size(self, dbz: float, zdr: float, mesh_inches: float) -> float:
+        """
+        Filters MESH (Maximum Expected Size of Hail) using Dual-Pol ZDR.
+        If DBZ is high but ZDR is also high (> 2.0), it's likely just heavy rain.
+        If DBZ is high and ZDR is low (< 0.5), it's confirmed hail.
+        """
+        if dbz > 50 and zdr > 2.5:
+            # High reflectivity but high ZDR = Large rain drops, not hail.
+            return mesh_inches * 0.3
+
+        if dbz > 55 and -0.5 < zdr < 0.5:
+            # High reflectivity and neutral ZDR = Confirmed tumbling hail.
+            return max(mesh_inches, 1.0) # Ensure it triggers a 'Large Hail' alert
+
+        return mesh_inches
+
     def _calculate_derived_features(self, features: Dict[str, Any]) -> Dict[str, Any]:
         """Calculate derived features from Dual-Pol data."""
         derived = {}
@@ -208,7 +224,9 @@ class NEXRADLevel2:
         # Maximum Expected Size of Hail (MESH)
         if features.get("reflectivity_dbz", 0) >= 40:
             z = features["reflectivity_dbz"]
-            derived["mesh_inches"] = max(0, (z - 40) * 0.03)
+            zdr = features.get("zdr_db", 0)
+            mesh_raw = max(0, (z - 40) * 0.03)
+            derived["mesh_inches"] = self.refine_hail_size(z, zdr, mesh_raw)
 
         # Hail Differential Reflectivity (HDR)
         if features.get("zdr_db", 0) >= 0.5:
