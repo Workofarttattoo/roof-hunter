@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Forensic Globe - AERO-COMMAND</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CesiumJS Engine -->
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.110/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.110/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;900&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <style>
+        body, html, #cesiumContainer { width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden; background: #000; }
+        .glass-panel { background: rgba(16, 20, 21, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(0, 240, 255, 0.2); }
+        .cesium-viewer-bottom { display: none !important; } /* Hide credits for clean UI */
+        .cesium-viewer-animationContainer, .cesium-viewer-timelineContainer { display: none !important; }
+    </style>
+</head>
+<body class="font-['Inter'] text-white">
+
+<div id="cesiumContainer"></div>
+
+<!-- Top HUD -->
+<header class="absolute top-0 left-0 w-full z-50 p-6 flex justify-between items-start pointer-events-none">
+    <div class="flex flex-col pointer-events-auto">
+        <div class="glass-panel p-4 rounded-lg flex items-center gap-4">
+            <span class="text-2xl font-black tracking-tighter text-cyan-400 drop-shadow-[0_0_8px_rgba(0,240,255,0.5)] uppercase">AERO-COMMAND 3D</span>
+            <div class="h-6 w-[1px] bg-cyan-500/30"></div>
+            <nav class="flex gap-4 font-['Space_Grotesk'] text-[10px] font-bold uppercase tracking-widest">
+                <a href="/landing" class="text-slate-400 hover:text-cyan-400">Dashboard</a>
+                <a href="/map-intelligence" class="text-slate-400 hover:text-cyan-400">Tactical 2D</a>
+                <span class="text-cyan-400">Forensic 3D</span>
+            </nav>
+        </div>
+        <div class="mt-4 glass-panel p-3 rounded-lg flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+            <span class="text-[8px] font-black uppercase tracking-widest">Live 3D Satellite Stream Active</span>
+        </div>
+    </div>
+    
+    <div class="flex flex-col items-end gap-4 pointer-events-auto">
+        <button onclick="window.location.href='/property-intel'" class="glass-panel p-4 rounded-lg text-cyan-400 hover:bg-cyan-400/10 transition-all flex items-center gap-2 font-bold uppercase text-[10px] tracking-widest">
+            <span class="material-symbols-outlined">analytics</span> Lead Center
+        </button>
+    </div>
+</header>
+
+<!-- Right Sidebar: 3D Lead Selector -->
+<aside class="absolute top-24 right-6 bottom-6 w-80 glass-panel rounded-xl z-50 flex flex-col overflow-hidden">
+    <div class="p-6 border-b border-cyan-500/15">
+        <h3 class="font-['Space_Grotesk'] text-sm font-black text-white uppercase tracking-widest">3D Target Queue</h3>
+        <p class="text-[10px] text-slate-400 mt-1">Select a strike to zoom to individual roof</p>
+    </div>
+    <div class="flex-1 overflow-y-auto p-4 flex flex-col gap-3 custom-scrollbar" id="leads-list">
+        <!-- Injected by JS -->
+    </div>
+</aside>
+
+<script>
+    // Initialize Cesium 3D Globe with ArcGIS World Imagery
+    const viewer = new Cesium.Viewer('cesiumContainer', {
+        imageryProvider: new Cesium.ArcGisMapServerImageryProvider({
+            url : 'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'
+        }),
+        terrainProvider: Cesium.createWorldTerrain(),
+        baseLayerPicker: false,
+        geocoder: false,
+        homeButton: false,
+        infoBox: false,
+        sceneModePicker: false,
+        selectionIndicator: false,
+        navigationHelpButton: false,
+        scene3DOnly: true,
+        requestRenderMode: true
+    });
+
+    viewer.scene.globe.depthTestAgainstTerrain = true;
+    viewer.scene.skyAtmosphere.show = false;
+    viewer.scene.fog.enabled = false;
+
+    // Set Initial View (Oklahoma City)
+    viewer.camera.flyTo({
+        destination: Cesium.Cartesian3.fromDegrees(-97.5164, 35.4676, 50000),
+        orientation: {
+            heading: Cesium.Math.toRadians(0),
+            pitch: Cesium.Math.toRadians(-35),
+            roll: 0.0
+        }
+    });
+
+    async function load3DLeads() {
+        const response = await fetch('/api/alerts');
+        const data = await response.json();
+        const list = document.getElementById('leads-list');
+        list.innerHTML = '';
+
+        data.forEach((lead, index) => {
+            const lat = 35.3394 + (Math.random() - 0.5) * 0.15;
+            const lon = -97.4867 + (Math.random() - 0.5) * 0.15;
+
+            // Add 3D Billboard Pin
+            viewer.entities.add({
+                position: Cesium.Cartesian3.fromDegrees(lon, lat, 2),
+                billboard: {
+                    image: 'https://img.icons8.com/ios-filled/50/00f0ff/map-pin.png',
+                    width: 32,
+                    height: 32,
+                    heightReference: Cesium.HeightReference.RELATIVE_TO_GROUND,
+                    verticalOrigin: Cesium.VerticalOrigin.BOTTOM
+                },
+                label: {
+                    text: lead.revenue,
+                    font: 'bold 12px Space Grotesk',
+                    fillColor: Cesium.Color.CYAN,
+                    outlineColor: Cesium.Color.BLACK,
+                    outlineWidth: 2,
+                    style: Cesium.LabelStyle.FILL_AND_OUTLINE,
+                    verticalOrigin: Cesium.VerticalOrigin.TOP,
+                    pixelOffset: new Cesium.Cartesian2(0, 10),
+                    heightReference: Cesium.HeightReference.RELATIVE_TO_GROUND
+                },
+                properties: lead
+            });
+
+            // Add to Sidebar
+            const leadEl = document.createElement('div');
+            leadEl.className = 'bg-slate-900/60 border border-cyan-500/10 rounded-lg p-3 hover:bg-slate-900 transition-all cursor-pointer group';
+            leadEl.onclick = () => {
+                viewer.camera.flyTo({
+                    destination: Cesium.Cartesian3.fromDegrees(lon, lat, 150),
+                    orientation: {
+                        heading: Cesium.Math.toRadians(0),
+                        pitch: Cesium.Math.toRadians(-45),
+                        roll: 0.0
+                    }
+                });
+            };
+            leadEl.innerHTML = `
+                <div class="flex justify-between items-start mb-2">
+                    <span class="text-[8px] font-black text-cyan-400 uppercase tracking-widest">${lead.tag}</span>
+                    <span class="text-[10px] font-black text-white">${lead.revenue}</span>
+                </div>
+                <p class="text-[10px] text-white font-bold uppercase truncate">${lead.address}</p>
+            `;
+            list.appendChild(leadEl);
+        });
+    }
+
+    load3DLeads();
+
+    // Mouse Interaction
+    const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+    handler.setInputAction(function(click) {
+        const pickedObject = viewer.scene.pick(click.position);
+        if (Cesium.defined(pickedObject)) {
+            const lead = pickedObject.id.properties;
+            alert(`AERO-COMMAND 3D INTEL\n\nTarget: ${lead.address}\nOwner: ${lead.contact}\nROI: ${lead.revenue}`);
+        }
+    }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+</script>
+
+</body>
+</html>

@@ -46,6 +46,10 @@ def map_intelligence():
 def property_intel():
     return render_template('property_intel.html')
 
+@app.route('/map-3d')
+def map_3d():
+    return render_template('map_3d.html')
+
 @app.route('/api/active_psas')
 def get_active_psas():
     try:
