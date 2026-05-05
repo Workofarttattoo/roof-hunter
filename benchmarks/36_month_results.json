@@ -1,0 +1,164 @@
+{
+  "summary": "36-Month Rolling Hindcast Tournament",
+  "metadata": {
+    "start_date": "2023-01-01",
+    "end_date": "2023-06-01",
+    "horizons": [
+      "48h",
+      "7d",
+      "30d",
+      "90d",
+      "180d",
+      "12m",
+      "24m",
+      "36m"
+    ],
+    "targets": [
+      "hail_ge_100",
+      "hail_ge_175",
+      "property_damage",
+      "top_5pct_value_zones"
+    ]
+  },
+  "results": {
+    "48h": {
+      "hail_ge_100": {
+        "brier_score": 0.10779027777777778,
+        "auroc": 0.9411764705882353,
+        "auprc": 0.3333333333333333,
+        "precision_at_5pct": 1.0,
+        "climatology": 0.05555555555555555,
+        "lift_over_climo": 18.0,
+        "revenue_per_1k_leads": 490000.0
+      },
+      "property_damage": {
+        "brier_score": 0.07894133333333334,
+        "auroc": 0.9411764705882353,
+        "auprc": 0.3333333333333333,
+        "precision_at_5pct": 1.0,
+        "climatology": 0.05555555555555555,
+        "lift_over_climo": 18.0,
+        "revenue_per_1k_leads": 490000.0
+      },
+      "top_5pct_value_zones": {
+        "brier_score": 0.1458402222222222,
+        "auroc": 0.9411764705882353,
+        "auprc": 0.3333333333333333,
+        "precision_at_5pct": 1.0,
+        "climatology": 0.05555555555555555,
+        "lift_over_climo": 18.0,
+        "revenue_per_1k_leads": 490000.0
+      }
+    },
+    "7d": {
+      "hail_ge_100": {
+        "brier_score": 0.1661236111111111,
+        "auroc": 0.14705882352941174,
+        "auprc": 0.05555555555555555,
+        "precision_at_5pct": 0.0,
+        "climatology": 0.05555555555555555,
+        "lift_over_climo": 0.0,
+        "revenue_per_1k_leads": -10000.0
+      },
+      "property_damage": {
+        "brier_score": 0.12560799999999997,
+        "auroc": 0.14705882352941174,
+        "auprc": 0.05555555555555555,
+        "precision_at_5pct": 0.0,
+        "climatology": 0.05555555555555555,
+        "lift_over_climo": 0.0,
+        "revenue_per_1k_leads": -10000.0
+      },
+      "top_5pct_value_zones": {
+        "brier_score": 0.2158402222222222,
+        "auroc": 0.14705882352941174,
+        "auprc": 0.05555555555555555,
+        "precision_at_5pct": 0.0,
+        "climatology": 0.05555555555555555,
+        "lift_over_climo": 0.0,
+        "revenue_per_1k_leads": -10000.0
+      }
+    },
+    "30d": {
+      "hail_ge_100": {
+        "brier_score": 0.16072777777777775,
+        "auroc": 0.8529411764705882,
+        "auprc": 0.16666666666666666,
+        "precision_at_5pct": 0.0,
+        "climatology": 0.05555555555555555,
+        "lift_over_climo": 0.0,
+        "revenue_per_1k_leads": -10000.0
+      },
+      "top_5pct_value_zones": {
+        "brier_score": 0.2220702222222222,
+        "auroc": 0.8529411764705882,
+        "auprc": 0.16666666666666666,
+        "precision_at_5pct": 0.0,
+        "climatology": 0.05555555555555555,
+        "lift_over_climo": 0.0,
+        "revenue_per_1k_leads": -10000.0
+      }
+    },
+    "90d": {
+      "hail_ge_100": {
+        "brier_score": 0.15992777777777775,
+        "auroc": 0.8529411764705882,
+        "auprc": 0.16666666666666666,
+        "precision_at_5pct": 0.0,
+        "climatology": 0.05555555555555555,
+        "lift_over_climo": 0.0,
+        "revenue_per_1k_leads": -10000.0
+      },
+      "top_5pct_value_zones": {
+        "brier_score": 0.2209182222222222,
+        "auroc": 0.8529411764705882,
+        "auprc": 0.16666666666666666,
+        "precision_at_5pct": 0.0,
+        "climatology": 0.05555555555555555,
+        "lift_over_climo": 0.0,
+        "revenue_per_1k_leads": -10000.0
+      }
+    },
+    "180d": {},
+    "12m": {
+      "hail_ge_100": {
+        "brier_score": 0.14174166666666665,
+        "auroc": 0.5,
+        "auprc": 0.08333333333333333,
+        "precision_at_5pct": 0.0,
+        "climatology": 0.05555555555555555,
+        "lift_over_climo": 0.0,
+        "revenue_per_1k_leads": -10000.0
+      },
+      "hail_ge_175": {
+        "brier_score": 0.08444922222222223,
+        "auroc": 0.5,
+        "auprc": 0.08333333333333333,
+        "precision_at_5pct": 0.0,
+        "climatology": 0.05555555555555555,
+        "lift_over_climo": 0.0,
+        "revenue_per_1k_leads": -10000.0
+      },
+      "property_damage": {
+        "brier_score": 0.10929244444444446,
+        "auroc": 0.5,
+        "auprc": 0.08333333333333333,
+        "precision_at_5pct": 0.0,
+        "climatology": 0.05555555555555555,
+        "lift_over_climo": 0.0,
+        "revenue_per_1k_leads": -10000.0
+      },
+      "top_5pct_value_zones": {
+        "brier_score": 0.18179688888888887,
+        "auroc": 0.5,
+        "auprc": 0.08333333333333333,
+        "precision_at_5pct": 0.0,
+        "climatology": 0.05555555555555555,
+        "lift_over_climo": 0.0,
+        "revenue_per_1k_leads": -10000.0
+      }
+    },
+    "24m": {},
+    "36m": {}
+  }
+}
