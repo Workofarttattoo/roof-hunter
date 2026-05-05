@@ -1,0 +1,20 @@
+{
+  "state": "Oklahoma",
+  "period": {
+    "start": "2026-04-04",
+    "end": "2026-05-04"
+  },
+  "metrics": {
+    "statewide_recall": 1.0,
+    "statewide_precision": 1.0,
+    "total_hail_strikes_tracked": 4
+  },
+  "city_breakdown": [
+    {
+      "city": "Moore",
+      "precision": 1.0,
+      "recall": 1.0,
+      "matches": 4
+    }
+  ]
+}
