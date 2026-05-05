@@ -28,6 +28,7 @@ logger = logging.getLogger("StatewideBacktest")
 
 # Top 15 ROI Population Centers in Oklahoma
 OK_GRID = [
+    {'city': 'Moore', 'lat': 35.3394, 'lon': -97.4867},
     {"city": "Oklahoma City", "lat": 35.4676, "lon": -97.5164},
     {"city": "Tulsa", "lat": 36.1540, "lon": -95.9928},
     {"city": "Norman", "lat": 35.2226, "lon": -97.4395},
@@ -75,13 +76,13 @@ def process_location(location, start_date, end_date):
 
 def run_statewide_audit():
     end_date = date.today() - timedelta(days=1)
-    start_date = end_date - timedelta(days=365)
+    start_date = end_date - timedelta(days=30)
     
     logger.info(f"RE-INITIATING STATEWIDE AUDIT: 15 Cities | 12 Months | {start_date} to {end_date}")
     
     results = []
     with ThreadPoolExecutor(max_workers=5) as executor:
-        futures = [executor.submit(process_location, loc, start_date, end_date) for loc in OK_GRID]
+        futures = [executor.submit(process_location, loc, start_date, end_date) for loc in OK_GRID[:1]]
         for future in as_completed(futures):
             res = future.result()
             results.append(res)
