@@ -1,21 +1,28 @@
+# AERO-COMMAND: High-Fidelity Forensic Container
 FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install dependencies
+# Install system dependencies for GIS and DB
+RUN apt-get update && apt-get install -y \
+    gcc \
+    libsqlite3-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements and install
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application code
+# Copy the entire forensic suite
 COPY . .
 
-# Expose port 10000 (standard for Render and some cloud providers)
-EXPOSE 10000
+# Expose the Flask Port
+EXPOSE 5001
 
-# Set environment variables for Gunicorn
-ENV GUNICORN_BIND=0.0.0.0:10000
-ENV GUNICORN_WORKERS=4
-ENV GUNICORN_TIMEOUT=120
+# Production Environment Variables
+ENV FLASK_APP=server.py
+ENV FLASK_RUN_HOST=0.0.0.0
+ENV FLASK_RUN_PORT=5001
 
-# Run the application with Gunicorn
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:10000", "app:app"]
+# Launch the AERO-COMMAND Engine
+CMD ["python", "server.py"]
