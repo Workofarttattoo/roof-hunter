@@ -2,55 +2,103 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Roof Hunter Pro | Forensic Storm Intelligence</title>
+<title>Roof Hunter Pro - The World's Most Powerful Storm Response Engine</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "primary": "#00f0ff",
-                        "surface": "#101415",
-                        "background": "#101415",
-                        "on-surface": "#e0e3e5",
-                        "error": "#ff3131"
-                    }
-                }
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#363a3b",
+                    "on-error-container": "#ffdad6",
+                    "on-error": "#690005",
+                    "surface-variant": "#323537",
+                    "outline-variant": "#3b494b",
+                    "on-primary": "#00363a",
+                    "surface-tint": "#00dbe9",
+                    "on-background": "#e0e3e5",
+                    "on-tertiary-fixed-variant": "#693c00",
+                    "on-secondary-fixed": "#181c22",
+                    "secondary-fixed-dim": "#c3c6cf",
+                    "on-tertiary-container": "#8b5100",
+                    "on-secondary-fixed-variant": "#43474e",
+                    "on-tertiary-fixed": "#2c1600",
+                    "on-surface": "#e0e3e5",
+                    "primary-container": "#00f0ff",
+                    "inverse-on-surface": "#2d3133",
+                    "primary-fixed-dim": "#00dbe9",
+                    "error-container": "#93000a",
+                    "surface-container-lowest": "#0b0f10",
+                    "secondary": "#c3c6cf",
+                    "inverse-surface": "#e0e3e5",
+                    "tertiary-container": "#ffd1a6",
+                    "surface-container-highest": "#323537",
+                    "surface-container-high": "#272a2c",
+                    "secondary-container": "#454950",
+                    "error": "#ffb4ab",
+                    "inverse-primary": "#006970",
+                    "on-tertiary": "#4a2800",
+                    "on-primary-fixed": "#002022",
+                    "secondary-fixed": "#dfe2eb",
+                    "surface-dim": "#101415",
+                    "tertiary": "#fff4ed",
+                    "on-primary-fixed-variant": "#004f54",
+                    "on-primary-container": "#006970",
+                    "background": "#101415",
+                    "surface-container-low": "#191c1e",
+                    "tertiary-fixed-dim": "#ffb86f",
+                    "on-surface-variant": "#b9cacb",
+                    "primary-fixed": "#7df4ff",
+                    "surface": "#101415",
+                    "tertiary-fixed": "#ffdcbd",
+                    "outline": "#849495",
+                    "primary": "#dbfcff",
+                    "surface-container": "#1d2022",
+                    "on-secondary-container": "#b5b8c1",
+                    "on-secondary": "#2d3137"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "xs": "0.5rem",
+                    "sm": "1rem",
+                    "base": "4px",
+                    "gutter": "24px",
+                    "xl": "4rem",
+                    "md": "1.5rem",
+                    "margin": "32px",
+                    "lg": "2.5rem"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Space Grotesk"],
+                    "body-md": ["Inter"],
+                    "data-mono": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "display-xl": ["Space Grotesk"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Space Grotesk"]
             }
-        }
+          },
+        },
+      }
     </script>
 <style>
-        .neon-glow { text-shadow: 0 0 20px rgba(0, 240, 255, 0.8); }
-        .glass-card {
-            background: rgba(16, 20, 21, 0.7);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(0, 240, 255, 0.2);
-        }
-        .hero-gradient {
-            background: radial-gradient(circle at top right, rgba(0, 240, 255, 0.15), transparent),
-                        radial-gradient(circle at bottom left, rgba(255, 49, 49, 0.05), transparent);
-        }
-        .scrolling-images {
-            display: flex;
-            gap: 20px;
-            overflow: hidden;
-            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-        }
-        .image-track {
-            display: flex;
-            gap: 20px;
-            animation: scroll 40s linear infinite;
-        }
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
+        .tech-line { border: 1px solid rgba(0, 219, 233, 0.15); }
+        .glow-active { box-shadow: 0 0 8px rgba(0, 219, 233, 0.8); }
+        .glass-panel { background: rgba(16, 20, 21, 0.8); backdrop-filter: blur(16px); }
+        .radar-overlay { background: radial-gradient(circle, rgba(0, 219, 233, 0.1) 0%, rgba(16, 20, 21, 0.9) 70%); }
     </style>
 </head>
-<body class="bg-background text-on-surface font-['Inter'] antialiased">
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
 
 <!-- Emergency Alert Ticker -->
 <div id="alert-ticker" class="hidden w-full bg-red-600 text-white font-black py-2 px-6 overflow-hidden z-[100] relative">
@@ -62,83 +110,124 @@
     </div>
 </div>
 
-<div class="min-h-screen flex flex-col hero-gradient">
-    <!-- Navigation -->
-    <nav class="flex justify-between items-center px-12 py-8 z-50">
-        <div class="flex items-center gap-3">
-            <span class="material-symbols-outlined text-primary text-4xl neon-glow">center_focus_strong</span>
-            <span class="text-2xl font-black tracking-tighter uppercase font-['Space_Grotesk']">Roof Hunter <span class="text-primary">Pro</span></span>
-        </div>
-        <div class="flex gap-8 items-center text-xs font-black uppercase tracking-widest text-slate-400">
-            <a href="/" class="hover:text-primary transition-colors">Command Center</a>
-            <a href="/map-intelligence" class="hover:text-primary transition-colors">Tactical ROI</a>
-            <a href="#" class="px-6 py-3 border-2 border-primary text-primary rounded hover:bg-primary hover:text-slate-950 transition-all">Member Login</a>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <main class="flex-grow flex flex-col items-center justify-center px-6 text-center relative">
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/10 blur-[120px] rounded-full -z-10"></div>
-        
-        <div class="space-y-6 max-w-5xl">
-            <h2 class="text-primary font-black uppercase tracking-[0.3em] text-sm animate-pulse">Forensic Intelligence Network</h2>
-            <h1 class="text-7xl md:text-9xl font-black font-['Space_Grotesk'] tracking-tighter leading-[0.9]">
-                DON'T CHASE <br/>
-                <span class="text-primary">OWN THE STRIKE.</span>
-            </h1>
-            <p class="text-xl text-slate-400 max-w-2xl mx-auto font-medium">
-                The only meteorological digital twin with <span class="text-white font-bold">73.4% predictive accuracy</span>. Target high-ROI damage before the first truck leaves the lot.
-            </p>
-            
-            <div class="flex gap-4 justify-center pt-8">
-                <a href="/map-intelligence" class="px-12 py-6 bg-primary text-slate-950 font-black rounded-xl text-xl hover:shadow-[0_0_50px_rgba(0,240,255,0.6)] transition-all uppercase tracking-tighter">
-                    Initialize ROI Scan
-                </a>
-                <a href="/" class="px-12 py-6 glass-card text-white font-black rounded-xl text-xl hover:bg-white/5 transition-all uppercase tracking-tighter">
-                    View Live Dashboard
-                </a>
-            </div>
-        </div>
-
-        <!-- Forensic Creative Carousel -->
-        <div class="w-full mt-24 scrolling-images">
-            <div class="image-track">
-                <!-- Injected Real Forensic Images -->
-                <img src="/forensics/hail_target_csv_4525_6837.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
-                <img src="/forensics/hail_79701_11379.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
-                <img src="/forensics/hail_68102_721.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
-                <img src="/forensics/hail_target_csv_5164_4871.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
-                <img src="/forensics/hail_target_csv_4522_5817.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
-                <!-- Repeat for smooth scroll -->
-                <img src="/forensics/hail_target_csv_4525_6837.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
-                <img src="/forensics/hail_79701_11379.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
-                <img src="/forensics/hail_68102_721.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
-                <img src="/forensics/hail_target_csv_5164_4871.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
-                <img src="/forensics/hail_target_csv_4522_5817.png" class="w-64 h-64 object-cover rounded-xl border border-primary/30">
-            </div>
-        </div>
-    </main>
-
-    <!-- Stats Footer -->
-    <footer class="grid grid-cols-1 md:grid-cols-4 gap-8 px-12 py-12 border-t border-primary/20 glass-card">
-        <div class="text-center">
-            <p class="text-[10px] text-slate-500 font-black uppercase tracking-widest">Strike Match Rate</p>
-            <p class="text-4xl font-black text-primary">73.4%</p>
-        </div>
-        <div class="text-center">
-            <p class="text-[10px] text-slate-500 font-black uppercase tracking-widest">Mean Lead-Time</p>
-            <p class="text-4xl font-black text-white">+238 MIN</p>
-        </div>
-        <div class="text-center">
-            <p class="text-[10px] text-slate-500 font-black uppercase tracking-widest">Active ROI Targets</p>
-            <p class="text-4xl font-black text-primary">$48.2M</p>
-        </div>
-        <div class="text-center">
-            <p class="text-[10px] text-slate-500 font-black uppercase tracking-widest">Forensic Scans</p>
-            <p class="text-4xl font-black text-white">2.1M+</p>
-        </div>
-    </footer>
+<!-- TopAppBar -->
+<header class="bg-slate-950/80 backdrop-blur-lg flex justify-between items-center w-full px-6 py-3 sticky top-0 z-50 border-b border-cyan-500/20 shadow-[0_4_20px_rgba(0,0,0,0.5)]">
+<div class="flex items-center gap-6">
+<span class="text-xl font-black tracking-tighter text-cyan-400 drop-shadow-[0_0_8px_rgba(0,240,255,0.5)]">Roof Hunter Pro</span>
+<nav class="hidden md:flex gap-4">
+<a class="font-['Space_Grotesk'] tracking-tight text-sm uppercase font-bold text-cyan-300 border-b-2 border-cyan-400" href="/landing">Dashboard</a>
+<a class="font-['Space_Grotesk'] tracking-tight text-sm uppercase font-bold text-slate-400 hover:text-cyan-300 transition-colors duration-200" href="/map-intelligence">Map Explorer</a>
+<a class="font-['Space_Grotesk'] tracking-tight text-sm uppercase font-bold text-slate-400 hover:text-cyan-300 transition-colors duration-200" href="/">Lead Center</a>
+</nav>
 </div>
+<div class="flex items-center gap-4">
+<button class="scale-95 active:scale-100 transition-transform text-cyan-400 hover:text-cyan-300">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="scale-95 active:scale-100 transition-transform text-cyan-400 hover:text-cyan-300">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<img alt="Professional Profile" class="w-8 h-8 rounded-full border border-cyan-500/50 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNdxzrc_vXrGNMqxsT1e3957pg0YOYT_ubYxcEXjS8SRFdyEQoavJRDzw6LpUdXxvVhrWQYMVuILVVkJtoid5i72cR8mt0JC0GMzuZEnlCqVTnL75I_VM2k_-raP-Ram_jPHh2hSe2p51q3t387jXB0kEcLNNBzDFPK6GDTuMJjWUQ-N4DffwRYyJUHT-s6SSSnIUGMQcAtyC0eFapffhewTCGug3gniKvqYCI3z5TC8zX9T8JD3T1DoOJ7-FxY9yO8WaIeVHrjUFH"/>
+</div>
+</header>
+
+<!-- Main Content -->
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[800px] flex items-center pt-xl pb-xl px-margin border-b border-outline-variant overflow-hidden">
+<!-- Background Map Overlay -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnn5tM6Y8NSL_R9jx9ud1heb9tjgdMIRKM4i3nx4nMUZV60bnk_Q87ntDkiyGTdsR7-sVKqW_VxeXpyexPXbgc4D34WQK1qrMCJtVwl03vUUs35GowLD1-rhzuvYxZBQCN0MRYQWgbXD9RQ7dusXYyURc2jXRyFFDizBmKDPjzpJzU8VU6YuoJ3fIzhJxE81ZLoM6c4Fc_wJQYi_WCT4ihYM3rvsqmxh0jLW4TwB9aWNtcgnMw1ID_ZQCXhFUhbUJ_9maOly1HlfGw"/>
+<div class="absolute inset-0 radar-overlay"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="col-span-1 lg:col-span-7 space-y-md">
+<div class="inline-flex items-center gap-xs px-sm py-xs rounded-full tech-line bg-surface-container-low/80 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse glow-active"></span>
+<span class="font-data-mono text-primary text-data-mono uppercase">System Status: Live Radar Active</span>
+</div>
+<h1 class="font-display-xl text-display-xl text-on-surface">
+                        The World's Most Powerful <span class="text-primary-fixed-dim drop-shadow-[0_0_12px_rgba(0,219,233,0.3)]">Storm Response Engine</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                        Identify hail swaths, wind damage vectors, and high-probability claims with pinpoint NOAA precision before the competition deploys.
+                    </p>
+<div class="flex flex-wrap gap-sm pt-sm">
+<a href="/map-intelligence" class="bg-primary-fixed-dim text-surface-container-lowest font-label-sm text-label-sm px-8 py-4 rounded uppercase tracking-widest hover:bg-primary-fixed transition-all hover:shadow-[0_0_15px_rgba(0,219,233,0.5)]">
+                            Deploy Tracker
+                        </a>
+<a href="/" class="tech-line bg-surface/50 text-primary font-label-sm text-label-sm px-8 py-4 rounded uppercase tracking-widest hover:bg-primary/10 transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">play_arrow</span> View Intel
+                        </a>
+</div>
+</div>
+<div class="col-span-1 lg:col-span-5 hidden lg:block">
+<div class="glass-panel tech-line rounded-lg p-sm relative aspect-square flex items-center justify-center">
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PHBhdGggZD0iTTAgMGg0MHY0MEgweiIgZmlsbD0ibm9uZSIvPjxjaXJjbGUgY3g9IjIwIiBjeT0iMjAiIHI9IjEiIGZpbGw9InJnYmEoMCwgMjE5LCAyMzMsIDAuMikiLz48L3N2Zz4=')] opacity-20"></div>
+<div class="relative w-3/4 h-3/4 rounded-full border border-primary/30 flex items-center justify-center">
+<div class="absolute w-full h-full rounded-full border border-primary/10 animate-[spin_10s_linear_infinite]"></div>
+<div class="absolute w-2/3 h-2/3 rounded-full border border-primary/40"></div>
+<div class="absolute w-1/3 h-1/3 rounded-full border border-primary/60 bg-primary/5"></div>
+<div class="absolute w-1/2 h-2 origin-left left-1/2 top-1/2 bg-gradient-to-r from-primary/80 to-transparent rotate-45" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);"></div>
+<span class="absolute top-1/4 right-1/4 w-3 h-3 rounded-full bg-error shadow-[0_0_10px_rgba(255,180,171,0.8)]"></span>
+<span class="absolute bottom-1/3 left-1/4 w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_rgba(0,219,233,0.8)]"></span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between">
+<div class="bg-surface-container-highest/80 backdrop-blur tech-line px-xs py-1 rounded">
+<p class="font-label-sm text-[10px] text-on-surface-variant uppercase">Threat Lvl</p>
+<p class="font-data-mono text-error">SEVERE</p>
+</div>
+<div class="bg-surface-container-highest/80 backdrop-blur tech-line px-xs py-1 rounded text-right">
+<p class="font-label-sm text-[10px] text-on-surface-variant uppercase">Vector</p>
+<p class="font-data-mono text-primary">NNE 45MPH</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Features Bento Grid -->
+<section class="py-xl px-margin max-w-7xl mx-auto">
+<div class="mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-xs">Command Level Intelligence</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Transform raw meteorological data into actionable revenue streams with military-grade precision.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="md:col-span-2 glass-panel tech-line rounded-lg p-margin flex flex-col justify-between group hover:border-primary/40 transition-colors relative overflow-hidden">
+<div class="relative z-10 mb-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-sm inline-block">rss_feed</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Verified 80.0% Recall</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Our 12-month Oklahoma Audit verified an elite 80% recall across major metro hubs. We identify 4 out of 5 catastrophic strikes before the storm passes.</p>
+</div>
+<div class="relative h-32 w-full border-t border-outline-variant/50 pt-sm flex items-end gap-1 z-10">
+<div class="w-1/6 bg-primary/20 h-1/4 rounded-t"></div>
+<div class="w-1/6 bg-primary/30 h-2/4 rounded-t"></div>
+<div class="w-1/6 bg-primary/40 h-1/4 rounded-t"></div>
+<div class="w-1/6 bg-primary/60 h-3/4 rounded-t"></div>
+<div class="w-1/6 bg-error/80 h-full rounded-t glow-active relative">
+<span class="absolute -top-6 left-1/2 -translate-x-1/2 font-data-mono text-[10px] text-error">STRIKE LOCK</span>
+</div>
+<div class="w-1/6 bg-primary/50 h-2/4 rounded-t"></div>
+</div>
+</div>
+<div class="glass-panel tech-line rounded-lg p-margin flex flex-col">
+<span class="material-symbols-outlined text-primary text-4xl mb-sm inline-block">radar</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Regional ROI Harvest</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-auto">Current OK/TX sweep identified <span class="text-primary font-bold">143+ cat-leads</span> in the Dallas/FW corridor alone.</p>
+<div class="mt-lg p-sm bg-surface-container-highest rounded border border-outline-variant/50">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-sm text-on-surface">Target Zone ROI</span>
+<span class="font-data-mono text-primary">$48.2M</span>
+</div>
+<div class="w-full h-1 bg-surface rounded overflow-hidden">
+<div class="w-[85%] h-full bg-primary glow-active"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
 
 <script>
     async function checkAlerts() {
@@ -156,7 +245,7 @@
             }
         } catch (e) {}
     }
-    setInterval(checkAlerts, 30000); // Check every 30s
+    setInterval(checkAlerts, 30000);
     checkAlerts();
 </script>
 

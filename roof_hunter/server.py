@@ -42,6 +42,10 @@ def storm_dashboard():
 def map_intelligence():
     return render_template('map_intelligence.html')
 
+@app.route('/property-intel')
+def property_intel():
+    return render_template('property_intel.html')
+
 @app.route('/api/active_psas')
 def get_active_psas():
     try:
