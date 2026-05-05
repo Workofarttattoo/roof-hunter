@@ -57,6 +57,10 @@ def forensic_delta():
     address = request.args.get('address', 'Dallas Metro Target')
     return jsonify(engine.get_mock_delta(address))
 
+@app.route('/download-targets')
+def download_targets():
+    return send_from_directory('.', 'AERO_COMMAND_OK_TX_TARGETS.csv', as_attachment=True)
+
 @app.route('/api/active_psas')
 def get_active_psas():
     try:
