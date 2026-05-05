@@ -1,0 +1,104 @@
+{
+  "state": "Oklahoma",
+  "period": {
+    "start": "2025-05-03",
+    "end": "2026-05-03"
+  },
+  "metrics": {
+    "statewide_recall": 0.68,
+    "statewide_precision": 0.68,
+    "total_hail_strikes_tracked": 1086
+  },
+  "city_breakdown": [
+    {
+      "city": "Norman",
+      "precision": 0.8,
+      "recall": 0.8,
+      "matches": 132
+    },
+    {
+      "city": "Broken Arrow",
+      "precision": 0.6,
+      "recall": 0.6,
+      "matches": 82
+    },
+    {
+      "city": "Tulsa",
+      "precision": 0.8,
+      "recall": 0.8,
+      "matches": 91
+    },
+    {
+      "city": "Oklahoma City",
+      "precision": 0.8,
+      "recall": 0.8,
+      "matches": 132
+    },
+    {
+      "city": "Edmond",
+      "precision": 0.8,
+      "recall": 0.8,
+      "matches": 95
+    },
+    {
+      "city": "Stillwater",
+      "precision": 0.6,
+      "recall": 0.6,
+      "matches": 28
+    },
+    {
+      "city": "Enid",
+      "precision": 0.6,
+      "recall": 0.6,
+      "matches": 31
+    },
+    {
+      "city": "Moore",
+      "precision": 0.8,
+      "recall": 0.8,
+      "matches": 145
+    },
+    {
+      "city": "Midwest City",
+      "precision": 0.8,
+      "recall": 0.8,
+      "matches": 139
+    },
+    {
+      "city": "Lawton",
+      "precision": 0.8,
+      "recall": 0.8,
+      "matches": 28
+    },
+    {
+      "city": "Ponca City",
+      "precision": 0.6,
+      "recall": 0.6,
+      "matches": 29
+    },
+    {
+      "city": "Owasso",
+      "precision": 0.6,
+      "recall": 0.6,
+      "matches": 88
+    },
+    {
+      "city": "Shawnee",
+      "precision": 0.8,
+      "recall": 0.8,
+      "matches": 38
+    },
+    {
+      "city": "Bartlesville",
+      "precision": 0.4,
+      "recall": 0.4,
+      "matches": 20
+    },
+    {
+      "city": "Muskogee",
+      "precision": 0.4,
+      "recall": 0.4,
+      "matches": 8
+    }
+  ]
+}
