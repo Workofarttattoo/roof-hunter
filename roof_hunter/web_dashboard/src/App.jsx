@@ -5,13 +5,15 @@ import {
   ShieldCheck, MessageSquare, ShoppingBag, Zap, LayoutDashboard, Lock, ChevronRight,
   Calendar, Layers, CheckCircle2, XCircle, Clock, Crosshair,
   Video, ScanLine, Play, X, Quote, Plane, Eye, Sparkles, RefreshCw, Cloud,
-  BarChart3, Ticket, LogIn, LogOut, UserPlus, CreditCard, User,
+  BarChart3, Radar, Ticket, LogIn, LogOut, UserPlus, CreditCard, User,
 } from 'lucide-react';
 import SalesAgentWidget from './SalesAgentWidget.jsx';
 import NoaaSpcResources from './NoaaSpcResources.jsx';
 import LandingHero from './LandingHero.jsx';
 import BentoFeatures from './BentoFeatures.jsx';
 import HailStrikeMap from './HailStrikeMap.jsx';
+import ProbabilisticStormDashboard from './ProbabilisticStormDashboard.jsx';
+import './ProbabilisticStormDashboard.css';
 import MapView from './MapView.jsx';
 import SiteWideCtaBar from './SiteWideCtaBar.jsx';
 import './App.css';
@@ -418,10 +420,10 @@ function App() {
           </button>
           <button
             type="button"
-            className={`nav-btn ${activeTab === 'command' ? 'active' : ''}`}
-            onClick={() => setActiveTab('command')}
+            className={`nav-btn ${activeTab === 'storm_intel' ? 'active' : ''}`}
+            onClick={() => setActiveTab('storm_intel')}
           >
-            <LayoutDashboard size={18} /> Command center
+            <Radar size={18} /> Storm Intel
           </button>
           <button
             type="button"
@@ -948,80 +950,8 @@ function App() {
           </section>
         )}
 
-        {activeTab === 'command' && (
-          <div className="dashboard-command fade-in glass">
-            <div className="tab-inline-cta glass-inset">
-              <p>
-                <strong>While you&apos;re in ops:</strong> crews in the marketplace are claiming storm ZIPs with fresher imagery.
-                Don&apos;t let margin walk out the door — stash inventory now.
-              </p>
-              <button type="button" className="cta-btn-primary sm" onClick={scrollToLeads}>
-                Jump to lead marketplace
-              </button>
-            </div>
-            <h2>Command center</h2>
-            <p className="command-lead">
-              Operations view for provisioning, infra, and middleman telephony. Marketplace buyers use the{' '}
-              <strong>Workspace</strong> panel on each lead for estimates and video previews.
-            </p>
-            <div className="aws-sync-panel glass-premium">
-              <div className="offer-text">
-                <h3>
-                  <Cloud size={20} /> AWS S3 lead ingest
-                </h3>
-                <p>
-                  Pull new rows from <code>AWS_LEADS_BUCKET</code> / <code>AWS_LEADS_OBJECT_KEY</code> into the forensic DB.
-                  Header stats and marketplace refresh after sync. Use IAM role or keys on the API service. In Kubernetes,{' '}
-                  <code>k8s/sync-cronjob.yaml</code> runs a daily POST to this endpoint (06:00 UTC).
-                </p>
-                {serverStats?.last_aws_sync && (
-                  <p className="muted small">
-                    Last ingest: {new Date(serverStats.last_aws_sync).toLocaleString()} · DB total {serverStats.total_leads}
-                  </p>
-                )}
-              </div>
-              <button
-                type="button"
-                className="provision-btn"
-                onClick={handleAwsSync}
-                disabled={awsSyncing}
-              >
-                {awsSyncing ? (
-                  <>
-                    <RefreshCw size={18} className="spin" /> Syncing…
-                  </>
-                ) : (
-                  <>
-                    <RefreshCw size={18} /> Sync from S3
-                  </>
-                )}
-              </button>
-            </div>
-            <div className="middleman-offer glass-premium">
-              <div className="offer-text">
-                <h3>
-                  <Zap size={20} /> Resell local numbers
-                </h3>
-                <p>
-                  Provision dedicated lines for your clients. <strong>${MIDDLEMAN_SETUP_FEE} setup</strong> + $
-                  {MIDDLEMAN_MONTHLY_FEE}/mo maintenance.
-                </p>
-              </div>
-              <button type="button" className="provision-btn" onClick={handleProvisionNumber} disabled={provisioningNumber}>
-                {provisioningNumber ? 'Contacting carrier…' : 'Provision new line'}
-              </button>
-            </div>
-
-            <div className="active-deployment-status glass-inset">
-              <h3>
-                <Layers size={16} /> Kubernetes readiness
-              </h3>
-              <p>
-                Namespace isolation recommended for batch workers. Echo AI collocated: interference risk{' '}
-                <strong>0%</strong> with dedicated workload identity.
-              </p>
-            </div>
-          </div>
+        {activeTab === 'storm_intel' && (
+          <ProbabilisticStormDashboard onBack={() => setActiveTab('marketplace')} />
         )}
 
         {activeTab === 'admin' && sessionUser?.role !== 'admin' && (

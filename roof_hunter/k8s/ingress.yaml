@@ -8,7 +8,7 @@
 #   ingressClassName: webapprouting.kubernetes.azure.com
 # - AGIC: ingressClassName: azure-application-gateway
 #
-# Replace CHANGEME.example.com with your DNS (Azure DNS / External-DNS).
+# Replace stormintel.ridgeline.ai with your DNS (Azure DNS / External-DNS).
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -20,7 +20,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: CHANGEME.example.com
+    - host: stormintel.ridgeline.ai
       http:
         paths:
           - path: /api
@@ -74,5 +74,5 @@ spec:
                   number: 80
   # tls:
   #   - hosts:
-  #       - CHANGEME.example.com
+  #       - stormintel.ridgeline.ai
   #     secretName: roof-hunter-tls
