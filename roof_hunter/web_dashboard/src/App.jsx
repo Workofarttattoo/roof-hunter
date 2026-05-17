@@ -10,6 +10,7 @@ import {
 import SalesAgentWidget from './SalesAgentWidget.jsx';
 import NoaaSpcResources from './NoaaSpcResources.jsx';
 import LandingHero from './LandingHero.jsx';
+import CommandCenter from "./CommandCenter.jsx";
 import BentoFeatures from './BentoFeatures.jsx';
 import HailStrikeMap from './HailStrikeMap.jsx';
 import MapView from './MapView.jsx';
@@ -478,6 +479,8 @@ function App() {
       <main id="main-content" className="main-content" tabIndex={-1}>
         {activeTab === 'marketplace' && (
           <section className="marketplace-section fade-in">
+            <CommandCenter />
+
             <LandingHero
               totalLeadsLabel={serverStats != null ? String(serverStats.total_leads) : null}
               onBrowseLeads={scrollToLeads}
