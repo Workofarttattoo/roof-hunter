@@ -14,6 +14,10 @@ import BentoFeatures from './BentoFeatures.jsx';
 import HailStrikeMap from './HailStrikeMap.jsx';
 import MapView from './MapView.jsx';
 import SiteWideCtaBar from './SiteWideCtaBar.jsx';
+import Sidebar from './Sidebar.jsx';
+import PropertyIntel from './PropertyIntel.jsx';
+import PricingROI from './PricingROI.jsx';
+import StormDashboard from './StormDashboard.jsx';
 import './App.css';
 
 /** Same-origin `/api` when empty (Ingress splits / and /api). Local dev: `VITE_API_BASE=http://localhost:8000` */
@@ -408,36 +412,14 @@ function App() {
             <span className="beta-tag pro-tag">Powered by Ridgeline · Storm intelligence &amp; lead OS</span>
           </div>
         </div>
-        <nav className="nav-tabs" aria-label="Primary">
-          <button
-            type="button"
-            className={`nav-btn ${activeTab === 'marketplace' ? 'active' : ''}`}
-            onClick={() => setActiveTab('marketplace')}
-          >
-            <ShoppingBag size={18} /> Lead marketplace
-          </button>
-          <button
-            type="button"
-            className={`nav-btn ${activeTab === 'command' ? 'active' : ''}`}
-            onClick={() => setActiveTab('command')}
-          >
-            <LayoutDashboard size={18} /> Command center
-          </button>
-          <button
-            type="button"
-            className={`nav-btn ${activeTab === 'flyover' ? 'active' : ''}`}
-            onClick={() => setActiveTab('flyover')}
-          >
-            <Plane size={18} /> Pro flyover
-          </button>
+        <nav className="top-nav" aria-label="Primary">
+          <button type="button" className={`top-nav-link${activeTab === 'storm_intel' ? ' active' : ''}`} onClick={() => setActiveTab('storm_intel')}>Storm Intel</button>
+          <button type="button" className={`top-nav-link${activeTab === 'marketplace' ? ' active' : ''}`} onClick={() => setActiveTab('marketplace')}>Lead Center</button>
+          <button type="button" className={`top-nav-link${activeTab === 'command' ? ' active' : ''}`} onClick={() => setActiveTab('command')}>Command</button>
+          <button type="button" className={`top-nav-link${activeTab === 'property_intel' ? ' active' : ''}`} onClick={() => setActiveTab('property_intel')}>Property Intel</button>
+          <button type="button" className={`top-nav-link${activeTab === 'pricing' ? ' active' : ''}`} onClick={() => setActiveTab('pricing')}>Pricing</button>
           {sessionUser?.role === 'admin' && (
-            <button
-              type="button"
-              className={`nav-btn ${activeTab === 'admin' ? 'active' : ''}`}
-              onClick={() => setActiveTab('admin')}
-            >
-              <LayoutDashboard size={18} /> Ops / admin
-            </button>
+            <button type="button" className={`top-nav-link${activeTab === 'admin' ? ' active' : ''}`} onClick={() => setActiveTab('admin')}>Admin</button>
           )}
         </nav>
         <div className="header-account">
@@ -475,7 +457,9 @@ function App() {
         </div>
       </header>
 
-      <main id="main-content" className="main-content" tabIndex={-1}>
+      <div className="app-body">
+        <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
+        <main id="main-content" className="main-content" tabIndex={-1}>
         {activeTab === 'marketplace' && (
           <section className="marketplace-section fade-in">
             <LandingHero
@@ -1267,7 +1251,12 @@ function App() {
             )}
           </section>
         )}
-      </main>
+
+        {activeTab === 'storm_intel' && <StormDashboard onBrowseLeads={scrollToLeads} />}
+        {activeTab === 'property_intel' && <PropertyIntel />}
+        {activeTab === 'pricing' && <PricingROI />}
+        </main>
+      </div>
 
       {/* Lead workspace (sales desk) */}
       {workspaceLead && estimate && (
