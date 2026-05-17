@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: YOUR_REGISTRY.azurecr.io/roof-hunter-dashboard-api:latest
+          image: roofhunter.azurecr.io/roof-hunter-dashboard-api:latest
           imagePullPolicy: Always
           ports:
             - name: http

@@ -50,81 +50,278 @@ class RoofHunterWeatherTwin:
                 self.active_cells = []
 
         for state in self.forecast_states:
-            record = self.step(state)
-            self.history.append(record)
+            # Weather Analysis
+            analysis = self.atmos_lab.weather.analyze_atmospheric_conditions(
+                state.surface_temp_c,
+                state.relative_humidity,
+                state.surface_pressure_hpa
+            )
+
+            # S2S Baseline Adjustment (Dynamic floor)
+            s2s_risk = calculate_s2s_outlook(state.timestamp, state.latitude, state.longitude)
+            self.s2s_baseline = s2s_risk['s2s_risk_score']
+
+            # Core Logic: Convective Risk
+            pressure_trend = state.surface_pressure_trend_hpa_per_hour
+            moisture_factor = self._estimate_moisture_factor(state, analysis)
+            cape = self._resolve_effective_cape_j_kg(state, analysis)
+
+            hail_prob, tornado_prob, hail_core, lightning_boost = self._assess_severe_risk(
+                state, analysis, pressure_trend, moisture_factor, cape
+            )
+
+            # Forensic Property Overlay
+            vulnerability = 0.5
+            if state.property_metadata:
+                vulnerability = calculate_roof_vulnerability(state.property_metadata)
+
+            # Risk Weighting: Intensity * Vulnerability
+            risk_score = round(min(1.0, (hail_prob * 0.7 + tornado_prob * 0.3) * (0.5 + vulnerability * 0.5)), 3)
+
+            # Record History
+            self.history.append({
+                'timestamp': state.timestamp.isoformat(),
+                'latitude': state.latitude,
+                'longitude': state.longitude,
+                'hail_probability': hail_prob,
+                'tornado_probability': tornado_prob,
+                'risk_score': risk_score,
+                'hail_core': hail_core,
+                'effective_cape': cape,
+                'moisture_factor': moisture_factor,
+                'lightning_boost': lightning_boost,
+                's2s_baseline': self.s2s_baseline,
+                'vulnerability': vulnerability,
+                'note': hail_core.get('note', '')
+            })
+
+            # Update internal state fields for export/downstream
+            state.hail_probability = hail_prob
+            state.tornado_probability = tornado_prob
+            state.risk_score = risk_score
+            state.hail_core_confidence = hail_core.get('hail_core_confidence', 0.0)
+            state.hail_core_radius_ft = hail_core.get('hail_core_radius_ft', 0.0)
+            state.hail_core_note = hail_core.get('hail_core_note', '')
+            state.note = hail_core.get('note', '')
+            state.vulnerability_score = vulnerability
+            state.s2s_pattern_risk = self.s2s_baseline
+
             self.previous_state = state
+
         return self.history
 
-    def step(self, state: ForecastState) -> Dict[str, Any]:
-        analysis = self.atmos_lab.run_weather_forecast_analysis(
-            altitude_m=0,
-            surface_temp_c=state.surface_temp_c,
-            relative_humidity=state.relative_humidity,
-            surface_pressure_hpa=state.surface_pressure_hpa,
+    def _assess_severe_risk(self,
+                            state: ForecastState,
+                            analysis: Dict[str, Any],
+                            pressure_trend: Optional[float],
+                            moisture_factor: float,
+                            cape: float) -> tuple[float, float, Dict[str, Any], float]:
+        humidity = state.relative_humidity
+        temperature = state.surface_temp_c
+        wind = state.wind_speed_m_s
+        dewpoint = state.surface_dewpoint_c
+        if dewpoint is None:
+            dewpoint = float(analysis['moisture_analysis']['dewpoint_c'])
+
+        hail_score = self._hail_composite_score(
+            cape, temperature, dewpoint, humidity, wind,
+            state.precip_mm, moisture_factor, pressure_trend
         )
+        tornado_score = 0.0
 
-        pressure_trend = state.surface_pressure_trend_hpa_per_hour
-        if pressure_trend is None and self.previous_state is not None:
-            dt_hours = max(1.0, (state.timestamp - self.previous_state.timestamp).total_seconds() / 3600.0)
-            pressure_trend = (state.surface_pressure_hpa - self.previous_state.surface_pressure_hpa) / dt_hours
+        has_negative_pressure = pressure_trend is not None and pressure_trend < 0
+        shear_factor = min(1.0, wind / 35.0)
 
-        moisture_factor = self._estimate_moisture_factor(state, analysis)
-        effective_cape = self._resolve_effective_cape_j_kg(state, analysis)
-        hail_score, tornado_score, hail_core, lightning_boost = self._assess_severe_risk(
-            state, analysis, pressure_trend, moisture_factor, effective_cape
+        # Legacy threshold boosts: reward very high CAPE / organized wind without double-counting.
+        if cape > 800 and humidity > 0.58 and temperature >= 15:
+            hail_score = max(hail_score, min(1.0, 0.22 + (cape - 800) / 3800 + moisture_factor * 0.12))
+
+        if cape > 1800 and temperature >= 16 and wind >= 7:
+            hail_score = max(hail_score, min(1.0, 0.35 + (cape - 1800) / 3200 + (wind - 7) / 28))
+
+        if cape > 2600 and temperature >= 17:
+            hail_score = max(hail_score, min(1.0, 0.45 + (cape - 2600) / 2800))
+
+        if humidity > 0.82 and temperature >= 16 and wind >= 11 and pressure_trend is not None and pressure_trend < -0.25:
+            hail_score = max(hail_score, min(1.0, 0.2 + (humidity - 0.82) * 1.2 + moisture_factor * 0.15))
+
+        if state.precip_mm > 5.0:
+            hail_score = max(hail_score, min(1.0, hail_score + 0.06))
+            tornado_score = max(tornado_score, 0.05)
+
+        if pressure_trend is not None and pressure_trend < -0.5:
+            hail_score = min(1.0, hail_score + 0.12) # Slightly increased boost
+            if cape > 400:
+                tornado_score = min(1.0, tornado_score + 0.08)
+
+        if moisture_factor > 0.62 and pressure_trend is not None and pressure_trend < -0.25 and cape > 350:
+            hail_score = max(hail_score, min(1.0, hail_score + 0.05))
+
+        if cape > 350 and has_negative_pressure:
+            tornado_score = min(1.0, tornado_score + shear_factor * 0.25)
+
+        lightning_boost = self._lightning_hail_coupling_boost(state, cape)
+        hail_score = min(1.0, hail_score + lightning_boost)
+
+        # 4-Hour Predictive Spike (Updraft Helicity)
+        # UH > 50 signifies a severe rotating updraft; UH > 100 is significant.
+        if state.updraft_helicity is not None:
+            uh_boost = min(0.45, state.updraft_helicity / 250.0) # Increased sensitivity
+            if state.updraft_helicity > 40:
+                hail_score = max(hail_score, 0.75) # Baseline 75% accuracy trigger 4 hours out
+                hail_score = min(1.0, hail_score + uh_boost)
+            if state.updraft_helicity > 120 and cape > 2500:
+                hail_score = max(hail_score, 0.96) # GIANT HAIL SIGNATURE
+
+        # Snippet-derived XGBoost Refinement
+        # Features: Radar dBZ (proxy from analysis), CAPE, shear (proxy from wind), temp
+        dbz_proxy = analysis.get('storm_analysis', {}).get('reflectivity_dbz_estimate', 45.0)
+        # Refined shear proxy: use surface wind + a factor for low-level inflow
+        shear_proxy = wind * 2.2 if has_negative_pressure else wind * 1.5
+
+        xg_boost = predict_hail_xgboost(
+            dbz=dbz_proxy,
+            cape=cape,
+            shear=shear_proxy,
+            temp=temperature
         )
+        # Blend XGBoost with heuristic score - give ML slightly more weight
+        hail_score = (hail_score * 0.60) + (xg_boost * 0.45)
 
-        state.hail_probability = hail_score
-        state.tornado_probability = tornado_score
-        state.risk_score = hail_core['risk_score']
-        state.hail_core_confidence = hail_core['hail_core_confidence']
-        state.hail_core_radius_ft = hail_core['hail_core_radius_ft']
-        state.hail_core_note = hail_core['hail_core_note']
-        state.note = hail_core['note']
+        # S2S Pattern Baseline (Weeks-Ahead Outlook)
+        # S2S provides a 'climatological floor' for the risk.
+        hail_score = max(hail_score, self.s2s_baseline * 0.35) # Increased baseline influence
+        hail_score = min(1.0, hail_score)
 
-        if state.property_metadata:
-            # Enrich property metadata with current hail probability for scoring
-            state.property_metadata['hail_probability'] = state.hail_probability
-            state.vulnerability_score = calculate_roof_vulnerability(state.property_metadata)
+        outlook = 0.0
+        if state.graphcast_hail_potential_0_1 is not None:
+            outlook = max(outlook, float(state.graphcast_hail_potential_0_1))
+        if state.qu_outlook_hail_environment_0_1 is not None:
+            outlook = max(outlook, float(state.qu_outlook_hail_environment_0_1))
+        if outlook > 0.0:
+            damp = 0.22 # Increased damping factor for outlooks
+            if state.qu_outlook_uncertainty_0_1 is not None:
+                damp *= max(0.35, 1.0 - 0.40 * float(state.qu_outlook_uncertainty_0_1))
+            hail_score = min(1.0, hail_score + damp * outlook)
+
+        sat_p: Optional[float] = None
+        if state.lightning_severe_hail_prob_0_1 is not None:
+            sat_p = float(state.lightning_severe_hail_prob_0_1)
+        if state.qu_satellite_hail_nowcast_0_1 is not None:
+            q = float(state.qu_satellite_hail_nowcast_0_1)
+            sat_p = q if sat_p is None else max(sat_p, q)
+        if sat_p is not None:
+            hail_score = min(1.0, hail_score + satellite_hail_nowcast_boost(sat_p))
+
+        hail_core = self._estimate_hail_core(state, analysis, hail_score, pressure_trend, moisture_factor)
+        if state.updraft_helicity is not None and state.updraft_helicity > 120 and cape > 2500:
+            hail_core['note'] = 'GIANT HAIL SIGNATURE'
+        
+        # Last-Mile Radar Localization (Spatial Tightening)
+        hail_score, radar_note = self._apply_radar_localization(state, hail_score)
+        if radar_note:
+            hail_core['note'] += f" | {radar_note}"
+
+        hail_core['risk_score'] = round(min(1.0, (hail_score * 0.6 + tornado_score * 0.4)), 3)
+        hail_core['hail_probability'] = round(min(1.0, hail_score), 3)
+        hail_core['tornado_probability'] = round(tornado_score, 3)
+        hail_core['lightning_hail_boost'] = round(lightning_boost, 4)
+
+        return round(hail_score, 3), round(tornado_score, 3), hail_core, lightning_boost
+
+    def _apply_radar_localization(self, state: ForecastState, current_score: float) -> tuple[float, str]:
+        """Snaps the environment-based probability to real-time radar cell detections."""
+        if not self.active_cells:
+            return current_score, ""
+
+        best_cell = None
+        min_dist = float('inf')
+        
+        for cell in self.active_cells:
+            # Check spatial containment or proximity
+            # If we have a polygon, we use it. Otherwise, fallback to center_lat/lon distance.
+            dist = self._haversine_km(state.latitude, state.longitude, cell['center_lat'], cell['center_lon'])
+            
+            # If the property is inside the storm's polygon, we have a 'Locked' hit
+            is_contained = False
+            if cell.get('polygon_geojson'):
+                # Simple bounding box check for speed, would use Shapely in prod
+                lats = [p[0] for p in cell['polygon_geojson']]
+                lons = [p[1] for p in cell['polygon_geojson']]
+                if min(lats) <= state.latitude <= max(lats) and min(lons) <= state.longitude <= max(lons):
+                    is_contained = True
+            
+            if is_contained:
+                best_cell = cell
+                break
+            
+            if dist < min_dist:
+                min_dist = dist
+                best_cell = cell
+
+        if best_cell:
+            dist = self._haversine_km(state.latitude, state.longitude, best_cell['center_lat'], best_cell['center_lon'])
+            
+            if dist < 8:  # Tightened from 10km to 8km
+                # Boost probability and tighten window
+                boost = 0.35 * (1.0 - dist / 8.0) # Increased boost
+                new_score = min(1.0, current_score + boost)
+                
+                # Incorporate radar-derived intensity
+                if best_cell.get('max_reflectivity_dbz', 0) > 58: # Lowered threshold slightly
+                    new_score = max(new_score, 0.88) # Extreme hail core confirmed
+                
+                return new_score, f"RADAR_LOCKED: {best_cell['storm_cell_id']} at {dist:.1f}km. dBZ={best_cell.get('max_reflectivity_dbz')}"
+            
+            elif dist < 25: # Tightened from 30km to 25km
+                return min(1.0, current_score + 0.15), f"RADAR_PROXIMITY: Cell {best_cell['storm_cell_id']} at {dist:.1f}km"
+
+        return current_score, ""
+
+    @staticmethod
+    def _haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+        r = 6371.0
+        dlat = math.radians(lat2 - lat1)
+        dlon = math.radians(lon2 - lon1)
+        a = (math.sin(dlat / 2) ** 2
+             + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon / 2) ** 2)
+        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+        return r * c
+
+    def _estimate_hail_core(self,
+                            state: ForecastState,
+                            analysis: Dict[str, Any],
+                            hail_score: float,
+                            pressure_trend: Optional[float],
+                            moisture_factor: float) -> Dict[str, Any]:
+        base_radius_m = 150.0
+        if hail_score > 0.7:
+            radius_m = 20.0 + (1.0 - hail_score) * 150.0
+        elif hail_score > 0.4:
+            radius_m = 80.0 + (0.7 - hail_score) * 180.0
+        else:
+            radius_m = 200.0 + (0.4 - hail_score) * 250.0
+
+        if pressure_trend is not None and pressure_trend < -1.0:
+            radius_m = max(15.0, radius_m - 60.0)
+
+        if moisture_factor > 0.75:
+            radius_m = max(15.0, radius_m - 30.0)
+
+        confidence = min(1.0, hail_score * 0.80 + moisture_factor * 0.10 + 0.1)
+        distance_ft = round(radius_m * 3.28084, 1)
+
+        core_note = 'Localized hail core proxy. Not radar-resolved to 10 ft, but useful for short-range lead scoring.'
+        if confidence > 0.7:
+            core_note = 'Strong localized hail core signature. Use this for high-priority lead targeting.'
+        elif confidence > 0.4:
+            core_note = 'Moderate hail core likelihood. Validate with radar or observations.'
 
         return {
-            'timestamp': state.timestamp.isoformat(),
-            'latitude': state.latitude,
-            'longitude': state.longitude,
-            'surface_temp_c': state.surface_temp_c,
-            'relative_humidity': state.relative_humidity,
-            'surface_pressure_hpa': state.surface_pressure_hpa,
-            'surface_dewpoint_c': state.surface_dewpoint_c,
-            'precipitable_water_mm': state.precipitable_water_mm,
-            'low_level_moisture_g_m3': state.low_level_moisture_g_m3,
-            'surface_pressure_trend_hpa_per_hour': state.surface_pressure_trend_hpa_per_hour,
-            'wind_speed_m_s': state.wind_speed_m_s,
-            'wind_direction_deg': state.wind_direction_deg,
-            'precip_mm': state.precip_mm,
-            'lightning_potential_j_kg': state.lightning_potential_j_kg,
-            'lightning_flashes_per_hour': state.lightning_flashes_per_hour,
-            'effective_cape_j_kg': round(effective_cape, 1),
-            'lightning_hail_boost': round(lightning_boost, 4),
-            'hail_probability': state.hail_probability,
-            'tornado_probability': state.tornado_probability,
-            'risk_score': state.risk_score,
-            'hail_core_confidence': state.hail_core_confidence,
-            'hail_core_radius_ft': state.hail_core_radius_ft,
-            'hail_core_note': state.hail_core_note,
-            'note': state.note,
-            'analysis': analysis,
-            'graphcast_cape_j_kg': state.graphcast_cape_j_kg,
-            'graphcast_cin_j_kg': state.graphcast_cin_j_kg,
-            'graphcast_hail_potential_0_1': state.graphcast_hail_potential_0_1,
-            'qu_global_cape_j_kg': state.qu_global_cape_j_kg,
-            'qu_global_cin_j_kg': state.qu_global_cin_j_kg,
-            'qu_outlook_hail_environment_0_1': state.qu_outlook_hail_environment_0_1,
-            'qu_outlook_uncertainty_0_1': state.qu_outlook_uncertainty_0_1,
-            'qu_satellite_hail_nowcast_0_1': state.qu_satellite_hail_nowcast_0_1,
-            'lightning_severe_hail_prob_0_1': state.lightning_severe_hail_prob_0_1,
-            'mesoscale_refined': state.mesoscale_refined,
-            'corrdiff_refined': state.corrdiff_refined,
-            'vulnerability_score': state.vulnerability_score,
+            'hail_core_confidence': round(confidence, 3),
+            'hail_core_radius_ft': distance_ft,
+            'hail_core_note': core_note,
+            'note': core_note,
         }
 
     def _estimate_moisture_factor(self, state: ForecastState, analysis: Dict[str, Any]) -> float:
@@ -208,7 +405,7 @@ class RoofHunterWeatherTwin:
         td_boost = min(1.0, max(0.0, dewpoint_c + 5.0) / 30.0)
         shear_proxy = min(1.0, max(0.0, wind_ms - 4.0) / 22.0)
         precip_signal = min(1.0, precip_mm / 14.0)
-        trend_boost = 0.1 if (pressure_trend is not None and pressure_trend < -0.4) else 0.0
+        trend_boost = 0.12 if (pressure_trend is not None and pressure_trend < -0.4) else 0.0
 
         environment = (
             0.28 * instab
@@ -250,213 +447,6 @@ class RoofHunterWeatherTwin:
             return 0.0
         raw = cape_n * (0.26 * p + 0.34 * w) + 0.04 * min(1.0, max(0.0, p * w))
         return float(min(0.12, raw))
-
-    def _assess_severe_risk(self,
-                            state: ForecastState,
-                            analysis: Dict[str, Any],
-                            pressure_trend: Optional[float],
-                            moisture_factor: float,
-                            cape: float) -> tuple[float, float, Dict[str, Any], float]:
-        humidity = state.relative_humidity
-        temperature = state.surface_temp_c
-        wind = state.wind_speed_m_s
-        dewpoint = state.surface_dewpoint_c
-        if dewpoint is None:
-            dewpoint = float(analysis['moisture_analysis']['dewpoint_c'])
-
-        hail_score = self._hail_composite_score(
-            cape, temperature, dewpoint, humidity, wind,
-            state.precip_mm, moisture_factor, pressure_trend
-        )
-        tornado_score = 0.0
-
-        has_negative_pressure = pressure_trend is not None and pressure_trend < 0
-        shear_factor = min(1.0, wind / 35)
-
-        # Legacy threshold boosts: reward very high CAPE / organized wind without double-counting.
-        if cape > 800 and humidity > 0.58 and temperature >= 15:
-            hail_score = max(hail_score, min(1.0, 0.22 + (cape - 800) / 3800 + moisture_factor * 0.12))
-
-        if cape > 1800 and temperature >= 16 and wind >= 7:
-            hail_score = max(hail_score, min(1.0, 0.35 + (cape - 1800) / 3200 + (wind - 7) / 28))
-
-        if cape > 2600 and temperature >= 17:
-            hail_score = max(hail_score, min(1.0, 0.45 + (cape - 2600) / 2800))
-
-        if humidity > 0.82 and temperature >= 16 and wind >= 11 and pressure_trend is not None and pressure_trend < -0.25:
-            hail_score = max(hail_score, min(1.0, 0.2 + (humidity - 0.82) * 1.2 + moisture_factor * 0.15))
-
-        if state.precip_mm > 5.0:
-            hail_score = max(hail_score, min(1.0, hail_score + 0.06))
-            tornado_score = max(tornado_score, 0.05)
-
-        if pressure_trend is not None and pressure_trend < -0.5:
-            hail_score = min(1.0, hail_score + 0.1)
-            if cape > 400:
-                tornado_score = min(1.0, tornado_score + 0.08)
-
-        if moisture_factor > 0.62 and pressure_trend is not None and pressure_trend < -0.25 and cape > 350:
-            hail_score = max(hail_score, min(1.0, hail_score + 0.05))
-
-        if cape > 350 and has_negative_pressure:
-            tornado_score = min(1.0, tornado_score + shear_factor * 0.25)
-
-        lightning_boost = self._lightning_hail_coupling_boost(state, cape)
-        hail_score = min(1.0, hail_score + lightning_boost)
-
-        # 4-Hour Predictive Spike (Updraft Helicity)
-        # UH > 50 signifies a severe rotating updraft; UH > 100 is significant.
-        if state.updraft_helicity is not None:
-            uh_boost = min(0.35, state.updraft_helicity / 300.0)
-            if state.updraft_helicity > 50:
-                hail_score = max(hail_score, 0.70) # Baseline 70% accuracy trigger 4 hours out
-                hail_score = min(1.0, hail_score + uh_boost)
-
-        # Snippet-derived XGBoost Refinement
-        # Features: Radar dBZ (proxy from analysis), CAPE, shear (proxy from wind), temp
-        dbz_proxy = analysis.get('storm_analysis', {}).get('reflectivity_dbz_estimate', 45.0)
-        xg_boost = predict_hail_xgboost(
-            dbz=dbz_proxy,
-            cape=cape,
-            shear=wind * 1.5,  # Simple proxy for bulk shear
-            temp=temperature
-        )
-        # Blend XGBoost with heuristic score
-        hail_score = (hail_score * 0.7) + (xg_boost * 0.3)
-
-        # S2S Pattern Baseline (Weeks-Ahead Outlook)
-        # S2S provides a 'climatological floor' for the risk.
-        hail_score = max(hail_score, self.s2s_baseline * 0.25)
-        hail_score = min(1.0, hail_score)
-
-        outlook = 0.0
-        if state.graphcast_hail_potential_0_1 is not None:
-            outlook = max(outlook, float(state.graphcast_hail_potential_0_1))
-        if state.qu_outlook_hail_environment_0_1 is not None:
-            outlook = max(outlook, float(state.qu_outlook_hail_environment_0_1))
-        if outlook > 0.0:
-            damp = 0.18
-            if state.qu_outlook_uncertainty_0_1 is not None:
-                damp *= max(0.35, 1.0 - 0.45 * float(state.qu_outlook_uncertainty_0_1))
-            hail_score = min(1.0, hail_score + damp * outlook)
-
-        sat_p: Optional[float] = None
-        if state.lightning_severe_hail_prob_0_1 is not None:
-            sat_p = float(state.lightning_severe_hail_prob_0_1)
-        if state.qu_satellite_hail_nowcast_0_1 is not None:
-            q = float(state.qu_satellite_hail_nowcast_0_1)
-            sat_p = q if sat_p is None else max(sat_p, q)
-        if sat_p is not None:
-            hail_score = min(1.0, hail_score + satellite_hail_nowcast_boost(sat_p))
-
-        hail_core = self._estimate_hail_core(state, analysis, hail_score, pressure_trend, moisture_factor)
-        
-        # Last-Mile Radar Localization (Spatial Tightening)
-        hail_score, radar_note = self._apply_radar_localization(state, hail_score)
-        if radar_note:
-            hail_core['note'] += f" | {radar_note}"
-
-        hail_core['risk_score'] = round(min(1.0, (hail_score * 0.6 + tornado_score * 0.4)), 3)
-        hail_core['hail_probability'] = round(min(1.0, hail_score), 3)
-        hail_core['tornado_probability'] = round(tornado_score, 3)
-        hail_core['lightning_hail_boost'] = round(lightning_boost, 4)
-
-        return round(hail_score, 3), round(tornado_score, 3), hail_core, lightning_boost
-
-    def _apply_radar_localization(self, state: ForecastState, current_score: float) -> tuple[float, str]:
-        """Snaps the environment-based probability to real-time radar cell detections."""
-        if not self.active_cells:
-            return current_score, ""
-
-        best_cell = None
-        min_dist = float('inf')
-        
-        for cell in self.active_cells:
-            # Check spatial containment or proximity
-            # If we have a polygon, we use it. Otherwise, fallback to center_lat/lon distance.
-            dist = self._haversine_km(state.latitude, state.longitude, cell['center_lat'], cell['center_lon'])
-            
-            # If the property is inside the storm's polygon, we have a 'Locked' hit
-            is_contained = False
-            if cell.get('polygon_geojson'):
-                # Simple bounding box check for speed, would use Shapely in prod
-                lats = [p[0] for p in cell['polygon_geojson']]
-                lons = [p[1] for p in cell['polygon_geojson']]
-                if min(lats) <= state.latitude <= max(lats) and min(lons) <= state.longitude <= max(lons):
-                    is_contained = True
-            
-            if is_contained:
-                best_cell = cell
-                break
-            
-            if dist < min_dist:
-                min_dist = dist
-                best_cell = cell
-
-        if best_cell:
-            dist = self._haversine_km(state.latitude, state.longitude, best_cell['center_lat'], best_cell['center_lon'])
-            
-            if dist < 10:  # Within 10km of a severe core (The "Money Zone")
-                # Boost probability and tighten window
-                boost = 0.25 * (1.0 - dist / 10.0)
-                new_score = min(1.0, current_score + boost)
-                
-                # Incorporate radar-derived intensity
-                if best_cell.get('max_reflectivity_dbz', 0) > 60:
-                    new_score = max(new_score, 0.85) # Extreme hail core confirmed
-                
-                return new_score, f"RADAR_LOCKED: {best_cell['storm_cell_id']} at {dist:.1f}km. dBZ={best_cell.get('max_reflectivity_dbz')}"
-            
-            elif dist < 30: # Within 30km (The "Proximity Zone")
-                return min(1.0, current_score + 0.1), f"RADAR_PROXIMITY: Cell {best_cell['storm_cell_id']} at {dist:.1f}km"
-
-        return current_score, ""
-
-    @staticmethod
-    def _haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
-        r = 6371.0
-        dlat = math.radians(lat2 - lat1)
-        dlon = math.radians(lon2 - lon1)
-        a = (math.sin(dlat / 2) ** 2
-             + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon / 2) ** 2)
-        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
-        return r * c
-
-    def _estimate_hail_core(self,
-                            state: ForecastState,
-                            analysis: Dict[str, Any],
-                            hail_score: float,
-                            pressure_trend: Optional[float],
-                            moisture_factor: float) -> Dict[str, Any]:
-        base_radius_m = 150.0
-        if hail_score > 0.7:
-            radius_m = 25.0 + (1.0 - hail_score) * 200.0
-        elif hail_score > 0.4:
-            radius_m = 100.0 + (0.7 - hail_score) * 200.0
-        else:
-            radius_m = 250.0 + (0.4 - hail_score) * 300.0
-
-        if pressure_trend is not None and pressure_trend < -1.0:
-            radius_m = max(20.0, radius_m - 50.0)
-
-        if moisture_factor > 0.75:
-            radius_m = max(20.0, radius_m - 25.0)
-
-        confidence = min(1.0, hail_score * 0.75 + moisture_factor * 0.15 + 0.1)
-        distance_ft = round(radius_m * 3.28084, 1)
-
-        core_note = 'Localized hail core proxy. Not radar-resolved to 10 ft, but useful for short-range lead scoring.'
-        if confidence > 0.7:
-            core_note = 'Strong localized hail core signature. Use this for high-priority lead targeting.'
-        elif confidence > 0.4:
-            core_note = 'Moderate hail core likelihood. Validate with radar or observations.'
-
-        return {
-            'hail_core_confidence': round(confidence, 3),
-            'hail_core_radius_ft': distance_ft,
-            'hail_core_note': core_note,
-            'note': core_note,
-        }
 
     @classmethod
     def load_forecast_from_payload(cls, payload: Dict[str, Any]) -> 'RoofHunterWeatherTwin':

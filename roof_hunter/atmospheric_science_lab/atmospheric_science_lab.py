@@ -515,6 +515,18 @@ class WeatherPredictor:
             'specific_humidity_kg_kg': specific_humidity
         }
 
+    def analyze_atmospheric_conditions(self, temp_c: float, relative_humidity: float, pressure_hpa: float) -> Dict:
+        moisture = self.estimate_dewpoint(temp_c, relative_humidity)
+        cape_data = self.predict_convective_available_potential_energy(temp_c, moisture["dewpoint_c"], pressure_hpa)
+        return {
+            "moisture_analysis": moisture,
+            "storm_analysis": {
+                "cape_j_kg": cape_data["cape_j_kg"],
+                "storm_potential": cape_data["storm_potential"],
+                "reflectivity_dbz_estimate": 45.0 + (cape_data["cape_j_kg"] / 1000.0) * 5.0
+            }
+        }
+
     def predict_convective_available_potential_energy(self,
                                                       surface_temp_c: float,
                                                       surface_dewpoint_c: float,
