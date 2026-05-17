@@ -2,6 +2,7 @@
 
 import numpy as np
 import logging
+import cv2
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger("TopologicalForensics")
@@ -33,6 +34,46 @@ class TopologicalForensics:
             })
             
         return damage_points
+
+    def compare_images_for_structural_delta(self, pre_image_path: str, post_image_path: str):
+        """
+        Estimate structural deltas from pre/post 2D imagery by treating normalized
+        grayscale intensity as a pseudo-height proxy.
+        """
+        pre = cv2.imread(pre_image_path, cv2.IMREAD_GRAYSCALE)
+        post = cv2.imread(post_image_path, cv2.IMREAD_GRAYSCALE)
+        if pre is None or post is None:
+            return {
+                "status": "IMAGE_READ_FAILED",
+                "height_drop_points": 0,
+                "max_drop_meters": 0.0,
+                "probability_score": 0.0,
+            }
+
+        if pre.shape != post.shape:
+            post = cv2.resize(post, (pre.shape[1], pre.shape[0]))
+
+        # Smooth and normalize to reduce lighting/noise differences.
+        pre_blur = cv2.GaussianBlur(pre, (5, 5), 0)
+        post_blur = cv2.GaussianBlur(post, (5, 5), 0)
+        pre_norm = cv2.normalize(pre_blur.astype(np.float32), None, 0.0, 1.0, cv2.NORM_MINMAX)
+        post_norm = cv2.normalize(post_blur.astype(np.float32), None, 0.0, 1.0, cv2.NORM_MINMAX)
+
+        # Convert normalized delta to pseudo-meters for compatibility with existing outputs.
+        pseudo_scale_m = 2.5
+        pre_h = pre_norm * pseudo_scale_m
+        post_h = post_norm * pseudo_scale_m
+        deltas = self.detect_height_drops("IMG_DELTA", pre_h, post_h)
+        max_drop = max((d["drop"] for d in deltas), default=0.0)
+        prob = min(0.99, 0.35 + (max_drop / 2.5) * 0.6) if deltas else 0.05
+
+        return {
+            "status": "CRITICAL_STRUCTURAL_LOSS" if deltas else "NO_STRUCTURAL_DEVIATION",
+            "height_drop_points": len(deltas),
+            "max_drop_meters": float(round(max_drop, 3)),
+            "detected_drops": deltas[:250],
+            "probability_score": float(round(prob, 3)),
+        }
 
     def get_mock_delta(self, address):
         """Generates a high-fidelity mock delta for the Investor Demo."""

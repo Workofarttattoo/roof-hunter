@@ -1,0 +1,57 @@
+{
+  "1 FM 1490, Levelland, TX 79336": {
+    "input_address": "1 FM 1490, Levelland, TX 79336",
+    "is_residential_likely": false,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "match_quality": "No_Match",
+    "matched_address": "",
+    "note": "",
+    "resolution_status": "no_match",
+    "tiger_side": ""
+  },
+  "10 FM 1490, Levelland, TX 79336": {
+    "input_address": "10 FM 1490, Levelland, TX 79336",
+    "is_residential_likely": false,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "match_quality": "No_Match",
+    "matched_address": "",
+    "note": "",
+    "resolution_status": "no_match",
+    "tiger_side": ""
+  },
+  "100 FM 1490, Levelland, TX 79336": {
+    "input_address": "100 FM 1490, Levelland, TX 79336",
+    "is_residential_likely": true,
+    "latitude": 33.594488262807,
+    "longitude": -102.403355238577,
+    "match_quality": "Exact",
+    "matched_address": "100 N FM 1490, LEVELLAND, TX, 79336",
+    "note": "",
+    "resolution_status": "resolved",
+    "tiger_side": "R"
+  },
+  "50 FM 1490, Levelland, TX 79336": {
+    "input_address": "50 FM 1490, Levelland, TX 79336",
+    "is_residential_likely": false,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "match_quality": "No_Match",
+    "matched_address": "",
+    "note": "",
+    "resolution_status": "no_match",
+    "tiger_side": ""
+  },
+  "FM 1490, Levelland, TX 79336": {
+    "input_address": "FM 1490, Levelland, TX 79336",
+    "is_residential_likely": false,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "match_quality": "N/A",
+    "matched_address": "",
+    "note": "street has no recognizable house# + street word, skipping geocode",
+    "resolution_status": "unresolvable_no_street",
+    "tiger_side": ""
+  }
+}

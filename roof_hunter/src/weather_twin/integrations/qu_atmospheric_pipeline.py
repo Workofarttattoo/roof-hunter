@@ -4,8 +4,8 @@ from __future__ import annotations
 
 from typing import Any, Dict, List
 
-from roof_hunter.integrations.global_outlook_engine import enrich_forecast_outlook
-from roof_hunter.integrations.satellite_nowcast_engine import enrich_forecast_satellite
+from .global_outlook_engine import enrich_forecast_outlook
+from .satellite_nowcast_engine import enrich_forecast_satellite
 
 
 def enrich_forecast_payload(payload: Dict[str, Any]) -> Dict[str, Any]:

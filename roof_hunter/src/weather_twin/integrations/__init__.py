@@ -1,17 +1,17 @@
 """QuLab proprietary atmospheric engines for Roof Hunter (no third-party model bridges)."""
 
-from roof_hunter.integrations.global_outlook_engine import (
+from .global_outlook_engine import (
     enrich_forecast_outlook,
     hail_potential_from_cape_cin,
     merge_graphcast_into_forecast_dicts,
 )
-from roof_hunter.integrations.mesoscale_downscale_engine import (
+from .mesoscale_downscale_engine import (
     apply_corrdiff_patch_to_state,
     apply_mesoscale_patch_to_state,
     refine_surface_dict,
 )
-from roof_hunter.integrations.qu_atmospheric_pipeline import enrich_forecast_payload
-from roof_hunter.integrations.satellite_nowcast_engine import (
+from .qu_atmospheric_pipeline import enrich_forecast_payload
+from .satellite_nowcast_engine import (
     enrich_forecast_satellite,
     lightning_severe_hail_boost,
     merge_lightning_severe_into_forecast_dicts,

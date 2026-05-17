@@ -1,9 +1,14 @@
 import logging
 import os
 import requests
-from src.oam_harvester import OAMHarvester
 
 logger = logging.getLogger(__name__)
+
+try:
+    from oam_harvester import OAMHarvester  # pragma: no cover — package-relative when src on path
+except ImportError:  # pragma: no cover
+    from src.oam_harvester import OAMHarvester  # noqa: WPS433
+
 
 class GoogleStaticImagery:
     """

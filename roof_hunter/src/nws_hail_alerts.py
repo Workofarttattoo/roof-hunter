@@ -31,6 +31,28 @@ def _feature_mentions_hail(props: dict[str, Any]) -> bool:
     return "hail" in blob
 
 
+def get_active_alerts_for_point(
+    lat: float,
+    lon: float,
+    *,
+    timeout: float = 25.0,
+) -> list[dict[str, Any]]:
+    """
+    Active alerts intersecting ``lat`` / ``lon`` via NWS ``point`` query parameter.
+
+    See https://www.weather.gov/documentation/services-web-api
+    """
+    headers = {
+        "User-Agent": _user_agent(),
+        "Accept": "application/geo+json",
+    }
+    url = f"{NWS_ALERTS_ACTIVE}?point={lat:g},{lon:g}"
+    r = requests.get(url, headers=headers, timeout=timeout)
+    r.raise_for_status()
+    data = r.json()
+    return list(data.get("features") or [])
+
+
 def get_hail_events(timeout: float = 25.0) -> list[dict[str, Any]]:
     """
     Return active alert *features* (GeoJSON objects) whose text mentions hail.

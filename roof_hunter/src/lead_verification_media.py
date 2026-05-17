@@ -9,6 +9,9 @@ import os
 import sqlite3
 from typing import Any
 
+# Fresh satellite/UAV chip + YOLO scoring (see verification_image_sources + verify_lead_imagery)
+VERIFICATION_YOLO_ROLE = "verification_yolo_chip"
+
 
 def ensure_lead_verification_media_table(conn: sqlite3.Connection) -> None:
     conn.execute(
@@ -183,6 +186,62 @@ def build_media_items_for_lead(
         )
 
     return items
+
+
+def _media_row_to_insert_dict(m: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "image_path": m["image_path"],
+        "role": m.get("role"),
+        "sort_order": int(m.get("sort_order", 0)),
+        "rationale": m["rationale"],
+        "call_hook": m.get("call_hook") or "",
+    }
+
+
+def apply_verification_yolo_chip(
+    conn: sqlite3.Connection,
+    *,
+    contact_id: int,
+    chip_item: dict[str, Any],
+    training_dir: str,
+    contact_row: sqlite3.Row,
+    storm_row: sqlite3.Row,
+) -> None:
+    """
+    Prepend a verification chip row, drop prior ``verification_yolo_chip`` entries,
+    and preserve or lazily build the remaining dialer media.
+    """
+    prior = fetch_media_rows(conn, contact_id)
+    if prior:
+        baseline = [_media_row_to_insert_dict(m) for m in prior if m.get("role") != VERIFICATION_YOLO_ROLE]
+    else:
+        lat = storm_row["latitude"] if "latitude" in storm_row.keys() else None
+        lon = storm_row["longitude"] if "longitude" in storm_row.keys() else None
+        baseline = build_media_items_for_lead(
+            contact_id=contact_id,
+            damage_score=float(contact_row["damage_score"] or 0),
+            magnitude=float(storm_row["magnitude"] or 0),
+            event_date=storm_row["event_date"],
+            state=storm_row["state"],
+            city=storm_row["city"],
+            zip_code=contact_row["zip_code"],
+            latitude=float(lat) if lat is not None else None,
+            longitude=float(lon) if lon is not None else None,
+            proof_msg=contact_row["proof_msg"] if "proof_msg" in contact_row.keys() else None,
+            image_findings=contact_row["image_findings"] if "image_findings" in contact_row.keys() else None,
+            training_dir=training_dir,
+        )
+        baseline = [dict(x) for x in baseline if x.get("role") != VERIFICATION_YOLO_ROLE]
+
+    chip = dict(chip_item)
+    merged: list[dict[str, Any]] = []
+    chip["sort_order"] = 0
+    merged.append(chip)
+    for i, row in enumerate(baseline):
+        row = dict(row)
+        row["sort_order"] = i + 1
+        merged.append(row)
+    replace_media_for_contact(conn, contact_id, merged)
 
 
 def replace_media_for_contact(conn: sqlite3.Connection, contact_id: int, rows: list[dict[str, Any]]) -> None:
